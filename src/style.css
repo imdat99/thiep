@@ -2182,7 +2182,7 @@ body {
 }
 
 #BOX1 > .ladi-box {
-  background-image: url("https://w.ladicdn.com/s750x950/6322a62f2dad980013bb5005/mieg0462-20250508125043-czpjc.jpg");
+  background-image: url("https://p16-sign-sg.tiktokcdn.com/tiktok-obj/edc7750f59bf3bf8cbe483e04bac98d9~tplv-tiktokx-origin.image?dr=14575&refresh_token=b5f55e3a&x-expires=2079961200&x-signature=8qU5SNDQwC3LDW9rUOsXUHBQFeQ%3D&t=4d5b0474&ps=13740610&shp=f21f527a&shcp=9b759fb9&idc=my2");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 0%;
@@ -2503,7 +2503,7 @@ body {
 }
 
 #BOX3 > .ladi-box {
-  background-image: url("https://w.ladicdn.com/s600x700/6322a62f2dad980013bb5005/mieg0732-20250508125140-vy0br.jpg");
+  background-image: url("https://p9-sg.tiktokcdn.com/tiktok-obj/23a55afe680734fccfdcac8fe83ec98b~tplv-photomode-zoomcover:480:480.jpeg");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 0%;
@@ -2677,7 +2677,7 @@ body {
 }
 
 #BOX5 > .ladi-box {
-  background-image: url("https://w.ladicdn.com/s500x550/6322a62f2dad980013bb5005/uypw3298-20250508125641-9n8z2.jpg");
+  background-image: url("https://p9-sg.tiktokcdn.com/tiktok-obj/700d8f4f5a55a9f1ba449378f2538eea~tplv-photomode-zoomcover:480:480.jpeg");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 0%;
@@ -2724,7 +2724,7 @@ body {
 }
 
 #BOX6 > .ladi-box {
-  background-image: url("https://w.ladicdn.com/s500x550/6322a62f2dad980013bb5005/uypw2977-20250508125640-vkzhs.jpg");
+  background-image: url("https://p9-sg.tiktokcdn.com/tiktok-obj/9127152c9ef5d8d6c40e5842418cfa28~tplv-photomode-zoomcover:480:480.jpeg");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 0%;
@@ -3215,6 +3215,7 @@ body {
 #HEADLINE158,
 #HEADLINE159,
 #HEADLINE197,
+#HEADLINE197x,
 #HEADLINE198,
 #HEADLINE199,
 #HEADLINE200,
@@ -3329,7 +3330,10 @@ body {
   top: 112.7px;
   left: 223px;
 }
-
+#HEADLINE197x {
+  top: 112.7px;
+  left: 12px!important;
+}
 #HEADLINE125,
 #HEADLINE197 {
   top: 112.7px;

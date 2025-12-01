@@ -1,7 +1,7 @@
 import { cloudflare } from '@cloudflare/vite-plugin'
 import { defineConfig } from 'vite'
 import ssrPlugin from 'vite-ssr-components/plugin'
-import unocss from 'unocss/vite'
+import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
-	plugins: [unocss(), cloudflare(), ssrPlugin()]
+	plugins: [tailwindcss(), cloudflare(), ssrPlugin()]
 })

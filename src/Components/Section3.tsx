@@ -62,7 +62,7 @@ export const Section3 = () => {
           <p className="ladi-headline ladi-transition">vân anh</p>
         </div>
         <div id="HEADLINE50" className="ladi-element ladi-animation">
-          <p className="ladi-headline ladi-transition">hồng quân</p>
+          <p className="ladi-headline ladi-transition">Thành Đạt</p>
         </div>
         <div id="HEADLINE51" className="ladi-element ladi-animation">
           <p className="ladi-headline ladi-transition">&amp;</p>

@@ -24,7 +24,7 @@ export const Section2 = () => {
           <p className="ladi-headline ladi-transition">
             QUYẾT ĐỊNH BÊN NHAU
             <br />
-            TRỌN ĐỜI.
+            TRỌN ĐỜI
             <br />
           </p>
         </div>
@@ -33,7 +33,7 @@ export const Section2 = () => {
         </div>
         <div id="HEADLINE8" className="ladi-element ladi-animation">
           <p className="ladi-headline ladi-transition">
-            18.05.2025
+            23.12.2025
             <br />
           </p>
         </div>
@@ -44,7 +44,7 @@ export const Section2 = () => {
           <div className="ladi-group">
             <div id="HEADLINE99" className="ladi-element ladi-animation">
               <h3 className="ladi-headline ladi-transition">
-                quân
+                Đạt
                 <br />
               </h3>
             </div>

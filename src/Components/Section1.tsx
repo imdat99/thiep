@@ -2,7 +2,7 @@
 
 export const Section1 = () => {
   return (
-    <div id="SECTION1" className="ladi-section">
+    <div id="SECTION1" class="ladi-section">
       <div className="ladi-section-background" />
       <div className="ladi-container">
         <div id="BOX1" className="ladi-element">
