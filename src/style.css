@@ -244,6 +244,7 @@ table {
 }
 
 @keyframes ladi-loading {
+
   0%,
   100%,
   20%,
@@ -484,7 +485,7 @@ body.grab {
   overflow: hidden;
 }
 
-.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item {
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -499,11 +500,11 @@ body.grab {
   perspective: 1000px;
 }
 
-.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.play-video {
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.play-video {
   cursor: pointer;
 }
 
-.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.play-video:after {
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.play-video:after {
   content: "";
   position: absolute;
   top: 0;
@@ -513,67 +514,66 @@ body.grab {
   margin: auto;
   width: 60px;
   height: 60px;
-  background: url(https://w.ladicdn.com/source/ladipage-play.svg?v=1.0)
-    no-repeat center center;
+  background: url(https://w.ladicdn.com/source/ladipage-play.svg?v=1.0) no-repeat center center;
   background-size: contain;
   pointer-events: none;
   cursor: pointer;
 }
 
-.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.next,
-.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.selected.right {
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.next,
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.selected.right {
   left: 0;
   transform: translate3d(100%, 0, 0);
 }
 
-.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.prev,
-.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.selected.left {
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.prev,
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.selected.left {
   left: 0;
   transform: translate3d(-100%, 0, 0);
 }
 
-.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.next.left,
-.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.prev.right,
-.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.selected {
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.next.left,
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.prev.right,
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.selected {
   left: 0;
   transform: translate3d(0, 0, 0);
 }
 
-.ladi-gallery .ladi-gallery-view > .selected,
-.ladi-gallery .ladi-gallery-view > .next,
-.ladi-gallery .ladi-gallery-view > .prev {
+.ladi-gallery .ladi-gallery-view>.selected,
+.ladi-gallery .ladi-gallery-view>.next,
+.ladi-gallery .ladi-gallery-view>.prev {
   display: block;
 }
 
-.ladi-gallery .ladi-gallery-view > .selected {
+.ladi-gallery .ladi-gallery-view>.selected {
   left: 0;
 }
 
-.ladi-gallery .ladi-gallery-view > .next,
-.ladi-gallery .ladi-gallery-view > .prev {
+.ladi-gallery .ladi-gallery-view>.next,
+.ladi-gallery .ladi-gallery-view>.prev {
   position: absolute;
   top: 0;
   width: 100%;
 }
 
-.ladi-gallery .ladi-gallery-view > .next {
+.ladi-gallery .ladi-gallery-view>.next {
   left: 100%;
 }
 
-.ladi-gallery .ladi-gallery-view > .prev {
+.ladi-gallery .ladi-gallery-view>.prev {
   left: -100%;
 }
 
-.ladi-gallery .ladi-gallery-view > .next.left,
-.ladi-gallery .ladi-gallery-view > .prev.right {
+.ladi-gallery .ladi-gallery-view>.next.left,
+.ladi-gallery .ladi-gallery-view>.prev.right {
   left: 0;
 }
 
-.ladi-gallery .ladi-gallery-view > .selected.left {
+.ladi-gallery .ladi-gallery-view>.selected.left {
   left: -100%;
 }
 
-.ladi-gallery .ladi-gallery-view > .selected.right {
+.ladi-gallery .ladi-gallery-view>.selected.right {
   left: 100%;
 }
 
@@ -609,10 +609,7 @@ body.grab {
   position: relative;
 }
 
-.ladi-gallery
-  .ladi-gallery-control
-  .ladi-gallery-control-box
-  .ladi-gallery-control-item {
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -622,10 +619,7 @@ body.grab {
   filter: invert(15%);
 }
 
-.ladi-gallery
-  .ladi-gallery-control
-  .ladi-gallery-control-box
-  .ladi-gallery-control-item.play-video:after {
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item.play-video:after {
   content: "";
   position: absolute;
   top: 0;
@@ -635,31 +629,21 @@ body.grab {
   margin: auto;
   width: 30px;
   height: 30px;
-  background: url(https://w.ladicdn.com/source/ladipage-play.svg?v=1.0)
-    no-repeat center center;
+  background: url(https://w.ladicdn.com/source/ladipage-play.svg?v=1.0) no-repeat center center;
   background-size: contain;
   pointer-events: none;
   cursor: pointer;
 }
 
-.ladi-gallery
-  .ladi-gallery-control
-  .ladi-gallery-control-box
-  .ladi-gallery-control-item:hover {
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item:hover {
   filter: none;
 }
 
-.ladi-gallery
-  .ladi-gallery-control
-  .ladi-gallery-control-box
-  .ladi-gallery-control-item.selected {
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item.selected {
   filter: none;
 }
 
-.ladi-gallery
-  .ladi-gallery-control
-  .ladi-gallery-control-box
-  .ladi-gallery-control-item:last-child {
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item:last-child {
   margin-right: 0 !important;
   margin-bottom: 0 !important;
 }
@@ -683,31 +667,23 @@ body.grab {
   bottom: 0;
 }
 
-.ladi-gallery.ladi-gallery-bottom
-  .ladi-gallery-control
-  .ladi-gallery-control-arrow {
+.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control .ladi-gallery-control-arrow {
   top: calc(50% - (33px) / 2);
 }
 
-.ladi-gallery.ladi-gallery-bottom
-  .ladi-gallery-control
-  .ladi-gallery-control-arrow-left {
+.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control .ladi-gallery-control-arrow-left {
   left: 0px;
   transform: rotateY(180deg) scale(0.6);
   -webkit-transform: rotateY(180deg) scale(0.6);
 }
 
-.ladi-gallery.ladi-gallery-bottom
-  .ladi-gallery-control
-  .ladi-gallery-control-arrow-right {
+.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control .ladi-gallery-control-arrow-right {
   right: 0px;
   transform: scale(0.6);
   -webkit-transform: scale(0.6);
 }
 
-.ladi-gallery.ladi-gallery-bottom
-  .ladi-gallery-control
-  .ladi-gallery-control-box {
+.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control .ladi-gallery-control-box {
   display: -webkit-inline-flex;
   display: inline-flex;
   left: 0;
@@ -725,17 +701,17 @@ body.grab {
   z-index: 90000070;
 }
 
-#SECTION_POPUP .ladi-container > .ladi-element {
+#SECTION_POPUP .ladi-container>.ladi-element {
   z-index: 90000070;
   position: fixed;
   display: none;
 }
 
-#SECTION_POPUP .ladi-container > .ladi-element[data-fixed-close="true"] {
+#SECTION_POPUP .ladi-container>.ladi-element[data-fixed-close="true"] {
   position: relative !important;
 }
 
-#SECTION_POPUP .ladi-container > .ladi-element.hide-visibility {
+#SECTION_POPUP .ladi-container>.ladi-element.hide-visibility {
   display: block !important;
   visibility: hidden !important;
 }
@@ -800,7 +776,7 @@ body.grab {
   vertical-align: middle;
 }
 
-.ladi-countdown > .ladi-element {
+.ladi-countdown>.ladi-element {
   text-decoration: inherit;
   background-size: inherit;
   background-attachment: inherit;
@@ -809,7 +785,7 @@ body.grab {
   display: inline-block;
 }
 
-.ladi-countdown > .ladi-element:last-child {
+.ladi-countdown>.ladi-element:last-child {
   margin-right: 0px !important;
 }
 
@@ -832,8 +808,8 @@ body.grab {
   transition: inherit;
 }
 
-.ladi-button > .ladi-button-headline,
-.ladi-button > .ladi-button-shape {
+.ladi-button>.ladi-button-headline,
+.ladi-button>.ladi-button-shape {
   width: 100% !important;
   height: 100% !important;
   top: 0 !important;
@@ -845,13 +821,13 @@ body.grab {
   -ms-user-select: none;
 }
 
-.ladi-button > .ladi-button-shape .ladi-shape {
+.ladi-button>.ladi-button-shape .ladi-shape {
   margin: auto;
   top: 0;
   bottom: 0;
 }
 
-.ladi-button > .ladi-button-headline .ladi-headline {
+.ladi-button>.ladi-button-headline .ladi-headline {
   display: table-cell;
   vertical-align: middle;
 }
@@ -903,6 +879,7 @@ body.grab {
 }
 
 @keyframes loading {
+
   0%,
   100% {
     opacity: 0;
@@ -929,19 +906,10 @@ body.grab {
   height: 100%;
 }
 
-.ladi-form > .ladi-element,
-.ladi-form > .ladi-element .ladi-form-item-container,
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item
-  .ladi-form-checkbox-item
-  span[data-checked="true"],
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item
-  .ladi-form-control:not(.ladi-form-control-select) {
+.ladi-form>.ladi-element,
+.ladi-form>.ladi-element .ladi-form-item-container,
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item span[data-checked="true"],
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control:not(.ladi-form-control-select) {
   text-transform: inherit;
   text-decoration: inherit;
   text-align: inherit;
@@ -952,7 +920,7 @@ body.grab {
   background-origin: inherit;
 }
 
-.ladi-form .ladi-button > .ladi-button-headline {
+.ladi-form .ladi-button>.ladi-button-headline {
   color: initial;
   font-size: initial;
   font-weight: initial;
@@ -965,11 +933,11 @@ body.grab {
 }
 
 .ladi-form [data-form-checkout-item="bump_offer"] .ladi-form-item,
-.ladi-form > [data-quantity="true"] .ladi-form-item-container {
+.ladi-form>[data-quantity="true"] .ladi-form-item-container {
   overflow: hidden;
 }
 
-.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item {
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item {
   text-transform: inherit;
   text-decoration: inherit;
   text-align: inherit;
@@ -977,20 +945,13 @@ body.grab {
   color: inherit;
 }
 
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item-background {
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item-background {
   background-size: inherit;
   background-attachment: inherit;
   background-origin: inherit;
 }
 
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item
-  .ladi-form-control-select {
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1007,17 +968,8 @@ body.grab {
   background-origin: inherit;
 }
 
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item
-  .ladi-form-checkbox-item,
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item
-  .ladi-form-checkbox-item
-  span[data-checked="false"] {
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item,
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item span[data-checked="false"] {
   text-transform: inherit;
   text-align: inherit;
   letter-spacing: inherit;
@@ -1027,85 +979,43 @@ body.grab {
   color: inherit;
 }
 
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item
-  .ladi-form-control-select-2 {
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-2 {
   width: calc(100% / 2 - 5px);
   max-width: calc(100% / 2 - 5px);
   min-width: calc(100% / 2 - 5px);
 }
 
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item
-  .ladi-form-control-select-2:nth-child(3),
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item
-  .ladi-form-control-select-3:nth-child(3),
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item
-  .ladi-form-control-select-3:nth-child(4) {
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-2:nth-child(3),
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-3:nth-child(3),
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-3:nth-child(4) {
   margin-left: 7.5px;
 }
 
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item
-  .ladi-form-control-select-3 {
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-3 {
   width: calc(100% / 3 - 5px);
   max-width: calc(100% / 3 - 5px);
   min-width: calc(100% / 3 - 5px);
 }
 
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item
-  .ladi-form-control-select
-  option {
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select option {
   color: initial;
 }
 
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item
-  .ladi-form-control-select:not([data-selected=""]) {
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select:not([data-selected=""]) {
   text-decoration: inherit;
 }
 
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item
-  .ladi-form-checkbox-item {
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item {
   text-decoration: inherit;
   vertical-align: middle;
 }
 
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item
-  .ladi-form-checkbox-box-item {
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-box-item {
   display: inline-block;
   width: fit-content;
 }
 
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item
-  .ladi-form-checkbox-item
-  span {
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item span {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1218,9 +1128,7 @@ body.grab {
   border: none;
 }
 
-.ladi-form
-  .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-vertical
-  .ladi-form-checkbox-item {
+.ladi-form .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-vertical .ladi-form-checkbox-item {
   margin-top: 0 !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -1229,9 +1137,7 @@ body.grab {
   border: none;
 }
 
-.ladi-form
-  .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-horizontal
-  .ladi-form-checkbox-item {
+.ladi-form .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-horizontal .ladi-form-checkbox-item {
   margin-top: 0 !important;
   margin-left: 0 !important;
   margin-right: 10px !important;
@@ -1295,11 +1201,7 @@ body.grab {
 
 .ladi-form .ladi-form-checkout-bump-offer-product.option-2,
 .ladi-form .ladi-form-item.otp-resend .button-get-code,
-.ladi-form
-  [data-form-checkout-item="payment"]
-  .ladi-form-checkout-payment-content
-  div
-  > span {
+.ladi-form [data-form-checkout-item="payment"] .ladi-form-checkout-payment-content div>span {
   display: block;
 }
 
@@ -1392,10 +1294,8 @@ body.grab {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(
-    calc(50% - var(--border-size)),
-    calc(50% - var(--border-size))
-  );
+  transform: translate(calc(50% - var(--border-size)),
+      calc(50% - var(--border-size)));
 }
 
 .ladi-form .ladi-form-checkout-bump-offer-check.multiple,
@@ -1422,9 +1322,7 @@ body.grab {
   --gap: 10px;
   gap: var(--gap);
   align-items: center;
-  width: calc(
-    100% - var(--width-quantity) - var(--check-size) - var(--gap) * 2
-  );
+  width: calc(100% - var(--width-quantity) - var(--check-size) - var(--gap) * 2);
 }
 
 .ladi-form .ladi-form-checkout-payment-content img,
@@ -1440,13 +1338,13 @@ body.grab {
   flex-flow: column;
 }
 
-.ladi-form .ladi-form-checkout-payment-content div > span,
-.ladi-form .ladi-form-checkout-product-content div > span {
+.ladi-form .ladi-form-checkout-payment-content div>span,
+.ladi-form .ladi-form-checkout-product-content div>span {
   font-size: inherit;
 }
 
-.ladi-form .ladi-form-checkout-payment-content div > span.small,
-.ladi-form .ladi-form-checkout-product-content div > span.small {
+.ladi-form .ladi-form-checkout-payment-content div>span.small,
+.ladi-form .ladi-form-checkout-product-content div>span.small {
   font-size: 80%;
   opacity: 0.8;
 }
@@ -1479,12 +1377,8 @@ body.grab {
   display: block;
 }
 
-.ladi-form
-  .ladi-form-checkout-payment-quantity
-  input::-webkit-inner-spin-button,
-.ladi-form
-  .ladi-form-checkout-payment-quantity
-  input::-webkit-outer-spin-button {
+.ladi-form .ladi-form-checkout-payment-quantity input::-webkit-inner-spin-button,
+.ladi-form .ladi-form-checkout-payment-quantity input::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -1544,18 +1438,11 @@ body.grab {
   display: table;
 }
 
-.ladi-form
-  [data-form-checkout-item="payment"]
-  .ladi-form-item
-  .ladi-form-checkout-payment-content {
+.ladi-form [data-form-checkout-item="payment"] .ladi-form-item .ladi-form-checkout-payment-content {
   width: calc(100% - 18px);
 }
 
-.ladi-form
-  [data-form-checkout-item="payment"]
-  .ladi-form-item
-  .ladi-form-checkout-payment-content
-  div {
+.ladi-form [data-form-checkout-item="payment"] .ladi-form-item .ladi-form-checkout-payment-content div {
   display: table-cell;
   vertical-align: middle;
   padding: 0 6px;
@@ -1564,11 +1451,7 @@ body.grab {
   position: relative;
 }
 
-.ladi-form
-  [data-form-checkout-item="payment"]
-  .ladi-form-item
-  .ladi-form-checkout-payment-content
-  div.arrow:before {
+.ladi-form [data-form-checkout-item="payment"] .ladi-form-item .ladi-form-checkout-payment-content div.arrow:before {
   content: "";
   --url: url("data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M6.14645%203.14645C6.34171%202.95118%206.65829%202.95118%206.85355%203.14645L11.3536%207.64645C11.5488%207.84171%2011.5488%208.15829%2011.3536%208.35355L6.85355%2012.8536C6.65829%2013.0488%206.34171%2013.0488%206.14645%2012.8536C5.95118%2012.6583%205.95118%2012.3417%206.14645%2012.1464L10.2929%208L6.14645%203.85355C5.95118%203.65829%205.95118%203.34171%206.14645%203.14645Z%22%20fill%3D%22black%22%2F%3E%0A%3C%2Fsvg%3E");
   -webkit-mask-image: var(--url);
@@ -1646,9 +1529,7 @@ body.grab {
   width: max-content;
 }
 
-.ladi-form
-  .ladi-form-checkout-bump-offer-checkbox.checkbox-bump-offer-3
-  .ladi-form-checkout-bump-offer-check {
+.ladi-form .ladi-form-checkout-bump-offer-checkbox.checkbox-bump-offer-3 .ladi-form-checkout-bump-offer-check {
   width: 12px;
   height: 12px;
   flex: 0 0 12px;
@@ -1675,10 +1556,8 @@ body.grab {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(
-    calc(50% - var(--border-size)),
-    calc(50% - var(--border-size))
-  );
+  transform: translate(calc(50% - var(--border-size)),
+      calc(50% - var(--border-size)));
 }
 
 .ladi-form .ladi-form-checkout-bump-offer-check.multiple.checked:before {
@@ -1693,9 +1572,7 @@ body.grab {
   position: absolute;
 }
 
-.ladi-form
-  .ladi-form-checkout-bump-offer-checkbox.checkbox-bump-offer-3
-  .ladi-form-checkout-bump-offer-check.multiple.checked:before {
+.ladi-form .ladi-form-checkout-bump-offer-checkbox.checkbox-bump-offer-3 .ladi-form-checkout-bump-offer-check.multiple.checked:before {
   top: -5px;
   left: -3px;
 }
@@ -1740,18 +1617,12 @@ body.grab {
   overflow: hidden;
 }
 
-.ladi-form
-  .ladi-form-checkout-bump-offer-product
-  .item-product
-  .item-product-title {
+.ladi-form .ladi-form-checkout-bump-offer-product .item-product .item-product-title {
   font-size: 90%;
   opacity: 0.6;
 }
 
-.ladi-form
-  .ladi-form-checkout-bump-offer-product
-  .item-product
-  .item-product-description {
+.ladi-form .ladi-form-checkout-bump-offer-product .item-product .item-product-description {
   color: #9fa7b1;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -1765,10 +1636,7 @@ body.grab {
   flex-direction: column;
 }
 
-.ladi-form
-  .ladi-form-checkout-bump-offer-product
-  .item-detail
-  .shock-promotion-label {
+.ladi-form .ladi-form-checkout-bump-offer-product .item-detail .shock-promotion-label {
   background-color: #ef9300;
   width: max-content;
   border-radius: 4px;
@@ -1817,35 +1685,20 @@ body.grab {
   justify-content: space-between;
 }
 
-.ladi-form
-  [data-form-checkout-item="coupon_code"]
-  .content-discount-block
-  .title {
+.ladi-form [data-form-checkout-item="coupon_code"] .content-discount-block .title {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.ladi-form
-  [data-form-checkout-item="coupon_code"]
-  .content-discount-block
-  .placeholder
-  span,
-.ladi-form
-  [data-form-checkout-item="coupon_code"]
-  .content-discount-block
-  .title
-  span {
+.ladi-form [data-form-checkout-item="coupon_code"] .content-discount-block .placeholder span,
+.ladi-form [data-form-checkout-item="coupon_code"] .content-discount-block .title span {
   font-weight: 400;
   font-size: 100%;
   line-height: 1.4;
 }
 
-.ladi-form
-  [data-form-checkout-item="coupon_code"]
-  .content-discount-block
-  .title
-  i {
+.ladi-form [data-form-checkout-item="coupon_code"] .content-discount-block .title i {
   width: 16px;
   height: 16px;
   mask-image: url(https://w.ladicdn.com/ladiui/icons/ldicon-discount-coupon.svg);
@@ -1853,21 +1706,14 @@ body.grab {
   mask-size: cover;
 }
 
-.ladi-form
-  [data-form-checkout-item="coupon_code"]
-  .content-discount-block
-  .placeholder {
+.ladi-form [data-form-checkout-item="coupon_code"] .content-discount-block .placeholder {
   display: flex;
   align-items: center;
   gap: 8px;
   cursor: pointer;
 }
 
-.ladi-form
-  [data-form-checkout-item="coupon_code"]
-  .content-discount-block
-  .placeholder
-  i {
+.ladi-form [data-form-checkout-item="coupon_code"] .content-discount-block .placeholder i {
   width: 16px;
   height: 16px;
   mask-image: url(https://w.ladicdn.com/ladiui/icons/new-ldicon-arrow-left.svg);
@@ -1876,11 +1722,7 @@ body.grab {
   background-color: #6d6d6d !important;
 }
 
-.ladi-form
-  > .ladi-element
-  .ladi-form-item-container
-  .ladi-form-item
-  .ladi-form-control-select {
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
   background-image: url("data:image/svg+xml;utf8, %3Csvg%20width%3D%2232%22%20height%3D%2224%22%20viewBox%3D%220%200%2032%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C0%2032%2C0%2016%2C24%22%20style%3D%22fill%3A%20rgb(0%2C%200%2C%200)%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
 }
 
@@ -2030,7 +1872,7 @@ a:link {
   -webkit-overflow-scrolling: touch;
 }
 
-.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item {
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item {
   transition: transform 300ms ease-in-out;
 }
 
@@ -2045,8 +1887,7 @@ body {
 
 @font-face {
   font-family: "RUJHYXJhbWuZCNZWRpdWudHRm";
-  src: url("https://w.ladicdn.com/6322a62f2dad980013bb5005/ebgaramond-medium-20250320040915-omeex.ttf")
-    format("truetype");
+  src: url("https://w.ladicdn.com/6322a62f2dad980013bb5005/ebgaramond-medium-20250320040915-omeex.ttf") format("truetype");
 }
 
 @font-face {
@@ -2056,8 +1897,7 @@ body {
 
 @font-face {
   font-family: "QSTUSQUUSUGQUULUFRElVTSUVEY";
-  src: url("https://w.ladicdn.com/6322a62f2dad980013bb5005/cormorantinfant-medium-20250320040935-nh0vi.ttf")
-    format("truetype");
+  src: url("https://w.ladicdn.com/6322a62f2dad980013bb5005/cormorantinfant-medium-20250320040935-nh0vi.ttf") format("truetype");
 }
 
 @font-face {
@@ -2067,8 +1907,7 @@ body {
 
 @font-face {
   font-family: "RUJHYXJhbWuZCSZWdbGFyLnRZg";
-  src: url("https://w.ladicdn.com/6322a62f2dad980013bb5005/ebgaramond-regular-20250320040439-sbnst.ttf")
-    format("truetype");
+  src: url("https://w.ladicdn.com/6322a62f2dad980013bb5005/ebgaramond-regular-20250320040439-sbnst.ttf") format("truetype");
 }
 
 @font-face {
@@ -2078,14 +1917,12 @@ body {
 
 @font-face {
   font-family: "IzlTbGlkZTAzIEljaWVsIEZvcnQgRmbmRyeSBSaWZIFJlZVsYXIudHRm";
-  src: url("https://w.ladicdn.com/6322a62f2dad980013bb5005/9slide03-iciel-fort-foundry-rift-regular-20240316103314-2vwzb.ttf")
-    format("truetype");
+  src: url("https://w.ladicdn.com/6322a62f2dad980013bb5005/9slide03-iciel-fort-foundry-rift-regular-20240316103314-2vwzb.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "IzlTbGlkZTAzIEljaWVsTmZWNlbnRvcFucyObJtYWwudHRm";
-  src: url("https://w.ladicdn.com/6322a62f2dad980013bb5005/9slide03-icielnovecentosans-normal-20240318082911-dgg1p.ttf")
-    format("truetype");
+  src: url("https://w.ladicdn.com/6322a62f2dad980013bb5005/9slide03-icielnovecentosans-normal-20240318082911-dgg1p.ttf") format("truetype");
 }
 
 body {
@@ -2102,86 +1939,86 @@ body {
 }
 
 #BOX1,
-#IMAGE26 > .ladi-image > .ladi-image-background,
+#IMAGE26>.ladi-image>.ladi-image-background,
 #IMAGE25,
-#IMAGE25 > .ladi-image > .ladi-image-background,
-#IMAGE17 > .ladi-image > .ladi-image-background,
+#IMAGE25>.ladi-image>.ladi-image-background,
+#IMAGE17>.ladi-image>.ladi-image-background,
 #HEADLINE99,
-#IMAGE28 > .ladi-image > .ladi-image-background,
-#IMAGE45 > .ladi-image > .ladi-image-background,
-#IMAGE29 > .ladi-image > .ladi-image-background,
-#IMAGE27 > .ladi-image > .ladi-image-background,
+#IMAGE28>.ladi-image>.ladi-image-background,
+#IMAGE45>.ladi-image>.ladi-image-background,
+#IMAGE29>.ladi-image>.ladi-image-background,
+#IMAGE27>.ladi-image>.ladi-image-background,
 #IMAGE4,
-#IMAGE4 > .ladi-image > .ladi-image-background,
+#IMAGE4>.ladi-image>.ladi-image-background,
 #IMAGE3,
-#IMAGE3 > .ladi-image > .ladi-image-background,
-#IMAGE6 > .ladi-image > .ladi-image-background,
-#IMAGE54 > .ladi-image > .ladi-image-background,
-#IMAGE55 > .ladi-image > .ladi-image-background,
-#IMAGE56 > .ladi-image > .ladi-image-background,
-#IMAGE58 > .ladi-image > .ladi-image-background,
+#IMAGE3>.ladi-image>.ladi-image-background,
+#IMAGE6>.ladi-image>.ladi-image-background,
+#IMAGE54>.ladi-image>.ladi-image-background,
+#IMAGE55>.ladi-image>.ladi-image-background,
+#IMAGE56>.ladi-image>.ladi-image-background,
+#IMAGE58>.ladi-image>.ladi-image-background,
 #BOX9,
 #IMAGE44,
-#IMAGE44 > .ladi-image > .ladi-image-background,
-#IMAGE12 > .ladi-image > .ladi-image-background,
-#IMAGE13 > .ladi-image > .ladi-image-background,
-#IMAGE14 > .ladi-image > .ladi-image-background,
-#IMAGE33 > .ladi-image > .ladi-image-background,
+#IMAGE44>.ladi-image>.ladi-image-background,
+#IMAGE12>.ladi-image>.ladi-image-background,
+#IMAGE13>.ladi-image>.ladi-image-background,
+#IMAGE14>.ladi-image>.ladi-image-background,
+#IMAGE33>.ladi-image>.ladi-image-background,
 #IMAGE32,
-#IMAGE32 > .ladi-image > .ladi-image-background,
-#IMAGE21 > .ladi-image > .ladi-image-background,
+#IMAGE32>.ladi-image>.ladi-image-background,
+#IMAGE21>.ladi-image>.ladi-image-background,
 #IMAGE20,
-#IMAGE20 > .ladi-image > .ladi-image-background,
+#IMAGE20>.ladi-image>.ladi-image-background,
 #FORM_ITEM2,
 #BOX28,
 #BOX26,
 #BOX33,
-#IMAGE53 > .ladi-image > .ladi-image-background,
+#IMAGE53>.ladi-image>.ladi-image-background,
 #POPUP1,
 #IMAGE42,
-#IMAGE42 > .ladi-image > .ladi-image-background,
+#IMAGE42>.ladi-image>.ladi-image-background,
 #POPUP2,
-#IMAGE46 > .ladi-image > .ladi-image-background,
-#IMAGE50 > .ladi-image > .ladi-image-background,
-#IMAGE47 > .ladi-image > .ladi-image-background,
+#IMAGE46>.ladi-image>.ladi-image-background,
+#IMAGE50>.ladi-image>.ladi-image-background,
+#IMAGE47>.ladi-image>.ladi-image-background,
 #BOX30,
 #GROUP38,
 #BOX34,
-#IMAGE51 > .ladi-image > .ladi-image-background,
+#IMAGE51>.ladi-image>.ladi-image-background,
 #BOX35,
-#IMAGE52 > .ladi-image > .ladi-image-background,
+#IMAGE52>.ladi-image>.ladi-image-background,
 #POPUP3,
 #GALLERY1 {
   top: 0px;
   left: 0px;
 }
 
-#BOX1 > .ladi-box,
-#BOX2 > .ladi-box,
-#BOX3 > .ladi-box,
-#BOX31 > .ladi-box,
-#BOX5 > .ladi-box,
-#BOX6 > .ladi-box,
-#BOX37 > .ladi-box,
-#BOX9 > .ladi-box,
-#BOX10 > .ladi-box,
-#BOX16 > .ladi-box,
-#BOX17 > .ladi-box,
-#BOX18 > .ladi-box,
-#BOX20 > .ladi-box,
-#BOX21 > .ladi-box,
-#BOX22 > .ladi-box,
-#BOX23 > .ladi-box,
-#BOX24 > .ladi-box,
-#BOX25 > .ladi-box,
-#BOX26 > .ladi-box,
-#BOX33 > .ladi-box,
-#BOX27 > .ladi-box,
-#BOX30 > .ladi-box {
+#BOX1>.ladi-box,
+#BOX2>.ladi-box,
+#BOX3>.ladi-box,
+#BOX31>.ladi-box,
+#BOX5>.ladi-box,
+#BOX6>.ladi-box,
+#BOX37>.ladi-box,
+#BOX9>.ladi-box,
+#BOX10>.ladi-box,
+#BOX16>.ladi-box,
+#BOX17>.ladi-box,
+#BOX18>.ladi-box,
+#BOX20>.ladi-box,
+#BOX21>.ladi-box,
+#BOX22>.ladi-box,
+#BOX23>.ladi-box,
+#BOX24>.ladi-box,
+#BOX25>.ladi-box,
+#BOX26>.ladi-box,
+#BOX33>.ladi-box,
+#BOX27>.ladi-box,
+#BOX30>.ladi-box {
   border-radius: 0px;
 }
 
-#BOX1 > .ladi-box {
+#BOX1>.ladi-box {
   background-image: url("https://p16-sign-sg.tiktokcdn.com/tiktok-obj/edc7750f59bf3bf8cbe483e04bac98d9~tplv-tiktokx-origin.image?dr=14575&refresh_token=b5f55e3a&x-expires=2079961200&x-signature=8qU5SNDQwC3LDW9rUOsXUHBQFeQ%3D&t=4d5b0474&ps=13740610&shp=f21f527a&shcp=9b759fb9&idc=my2");
   background-size: cover;
   background-origin: content-box;
@@ -2190,151 +2027,151 @@ body {
   background-attachment: scroll;
 }
 
-#BOX1 > .ladi-box:hover,
-#BOX2 > .ladi-box:hover,
-#IMAGE26:hover > .ladi-image,
-#IMAGE25:hover > .ladi-image,
-#HEADLINE6 > .ladi-headline:hover,
-#HEADLINE7 > .ladi-headline:hover,
-#HEADLINE8 > .ladi-headline:hover,
-#BOX3 > .ladi-box:hover,
-#HEADLINE99 > .ladi-headline:hover,
-#HEADLINE100 > .ladi-headline:hover,
-#HEADLINE101 > .ladi-headline:hover,
-#IMAGE28:hover > .ladi-image,
-#IMAGE45:hover > .ladi-image,
-#BOX31 > .ladi-box:hover,
-#IMAGE29:hover > .ladi-image,
-#IMAGE27:hover > .ladi-image,
-#HEADLINE48 > .ladi-headline:hover,
-#HEADLINE49 > .ladi-headline:hover,
-#HEADLINE50 > .ladi-headline:hover,
-#HEADLINE51 > .ladi-headline:hover,
-#HEADLINE60 > .ladi-headline:hover,
-#HEADLINE108 > .ladi-headline:hover,
-#HEADLINE102 > .ladi-headline:hover,
-#HEADLINE106 > .ladi-headline:hover,
-#HEADLINE107 > .ladi-headline:hover,
-#HEADLINE121 > .ladi-headline:hover,
-#HEADLINE122 > .ladi-headline:hover,
-#HEADLINE123 > .ladi-headline:hover,
-#HEADLINE124 > .ladi-headline:hover,
-#HEADLINE125 > .ladi-headline:hover,
-#HEADLINE126 > .ladi-headline:hover,
-#HEADLINE127x > .ladi-headline:hover,
-#HEADLINE128x > .ladi-headline:hover,
-#HEADLINE129x > .ladi-headline:hover,
-#HEADLINE130x > .ladi-headline:hover,
-#HEADLINE131x > .ladi-headline:hover,
-#HEADLINE132x > .ladi-headline:hover,
-#HEADLINE127 > .ladi-headline:hover,
-#HEADLINE128 > .ladi-headline:hover,
-#HEADLINE129 > .ladi-headline:hover,
-#HEADLINE130 > .ladi-headline:hover,
-#HEADLINE131 > .ladi-headline:hover,
-#HEADLINE132 > .ladi-headline:hover,
-#HEADLINE133 > .ladi-headline:hover,
-#HEADLINE134 > .ladi-headline:hover,
-#HEADLINE135 > .ladi-headline:hover,
-#HEADLINE136 > .ladi-headline:hover,
-#HEADLINE137 > .ladi-headline:hover,
-#HEADLINE138 > .ladi-headline:hover,
-#HEADLINE139 > .ladi-headline:hover,
-#HEADLINE140 > .ladi-headline:hover,
-#HEADLINE141 > .ladi-headline:hover,
-#HEADLINE142 > .ladi-headline:hover,
-#HEADLINE143 > .ladi-headline:hover,
-#HEADLINE144 > .ladi-headline:hover,
-#HEADLINE145 > .ladi-headline:hover,
-#HEADLINE146 > .ladi-headline:hover,
-#HEADLINE147 > .ladi-headline:hover,
-#HEADLINE148 > .ladi-headline:hover,
-#HEADLINE149 > .ladi-headline:hover,
-#HEADLINE150 > .ladi-headline:hover,
-#HEADLINE151 > .ladi-headline:hover,
-#HEADLINE152 > .ladi-headline:hover,
-#HEADLINE153 > .ladi-headline:hover,
-#HEADLINE154 > .ladi-headline:hover,
-#HEADLINE155 > .ladi-headline:hover,
-#HEADLINE156 > .ladi-headline:hover,
-#HEADLINE157 > .ladi-headline:hover,
-#HEADLINE158 > .ladi-headline:hover,
-#HEADLINE159 > .ladi-headline:hover,
-#BOX37 > .ladi-box:hover,
-#HEADLINE196 > .ladi-headline:hover,
-#HEADLINE197 > .ladi-headline:hover,
-#HEADLINE198 > .ladi-headline:hover,
-#HEADLINE199 > .ladi-headline:hover,
-#HEADLINE200 > .ladi-headline:hover,
-#HEADLINE201 > .ladi-headline:hover,
-#HEADLINE202 > .ladi-headline:hover,
-#HEADLINE203 > .ladi-headline:hover,
-#HEADLINE204 > .ladi-headline:hover,
-#HEADLINE205 > .ladi-headline:hover,
-#HEADLINE206 > .ladi-headline:hover,
-#HEADLINE207 > .ladi-headline:hover,
-#HEADLINE208 > .ladi-headline:hover,
-#HEADLINE209 > .ladi-headline:hover,
-#HEADLINE210 > .ladi-headline:hover,
-#HEADLINE211 > .ladi-headline:hover,
-#HEADLINE212 > .ladi-headline:hover,
-#HEADLINE213 > .ladi-headline:hover,
-#HEADLINE214 > .ladi-headline:hover,
-#HEADLINE215 > .ladi-headline:hover,
-#HEADLINE216 > .ladi-headline:hover,
-#HEADLINE217 > .ladi-headline:hover,
-#HEADLINE218 > .ladi-headline:hover,
-#HEADLINE219 > .ladi-headline:hover,
-#HEADLINE220 > .ladi-headline:hover,
-#HEADLINE221 > .ladi-headline:hover,
-#HEADLINE222 > .ladi-headline:hover,
-#HEADLINE223 > .ladi-headline:hover,
-#HEADLINE224 > .ladi-headline:hover,
-#HEADLINE225 > .ladi-headline:hover,
-#HEADLINE226 > .ladi-headline:hover,
-#HEADLINE227 > .ladi-headline:hover,
-#HEADLINE228 > .ladi-headline:hover,
-#HEADLINE229 > .ladi-headline:hover,
-#HEADLINE230 > .ladi-headline:hover,
-#HEADLINE231 > .ladi-headline:hover,
-#HEADLINE232 > .ladi-headline:hover,
-#HEADLINE233 > .ladi-headline:hover,
-#BOX9 > .ladi-box:hover,
-#BOX10 > .ladi-box:hover,
-#HEADLINE61 > .ladi-headline:hover,
-#IMAGE44:hover > .ladi-image,
-#HEADLINE64 > .ladi-headline:hover,
-#HEADLINE66 > .ladi-headline:hover,
-#HEADLINE67 > .ladi-headline:hover,
-#HEADLINE63 > .ladi-headline:hover,
-#HEADLINE68 > .ladi-headline:hover,
-#HEADLINE69 > .ladi-headline:hover,
-#HEADLINE65 > .ladi-headline:hover,
-#HEADLINE70 > .ladi-headline:hover,
-#HEADLINE71 > .ladi-headline:hover,
-#BOX16 > .ladi-box:hover,
-#IMAGE33:hover > .ladi-image,
-#IMAGE32:hover > .ladi-image,
-#BUTTON2 > .ladi-button:hover,
-#BUTTON_TEXT2 > .ladi-headline:hover,
-#HEADLINE84 > .ladi-headline:hover,
-#HEADLINE85 > .ladi-headline:hover,
-#HEADLINE86 > .ladi-headline:hover,
-#BOX28 > .ladi-box:hover,
-#HEADLINE94 > .ladi-headline:hover,
-#BOX26 > .ladi-box:hover,
-#BOX33 > .ladi-box:hover,
-#HEADLINE88 > .ladi-headline:hover,
-#HEADLINE89 > .ladi-headline:hover,
-#BOX36 > .ladi-box:hover,
-#BOX27 > .ladi-box:hover,
-#HEADLINE91 > .ladi-headline:hover,
-#HEADLINE92 > .ladi-headline:hover,
-#HEADLINE93 > .ladi-headline:hover,
-#IMAGE46:hover > .ladi-image,
-#BOX30 > .ladi-box:hover,
-#BOX34 > .ladi-box:hover,
-#BOX35 > .ladi-box:hover {
+#BOX1>.ladi-box:hover,
+#BOX2>.ladi-box:hover,
+#IMAGE26:hover>.ladi-image,
+#IMAGE25:hover>.ladi-image,
+#HEADLINE6>.ladi-headline:hover,
+#HEADLINE7>.ladi-headline:hover,
+#HEADLINE8>.ladi-headline:hover,
+#BOX3>.ladi-box:hover,
+#HEADLINE99>.ladi-headline:hover,
+#HEADLINE100>.ladi-headline:hover,
+#HEADLINE101>.ladi-headline:hover,
+#IMAGE28:hover>.ladi-image,
+#IMAGE45:hover>.ladi-image,
+#BOX31>.ladi-box:hover,
+#IMAGE29:hover>.ladi-image,
+#IMAGE27:hover>.ladi-image,
+#HEADLINE48>.ladi-headline:hover,
+#HEADLINE49>.ladi-headline:hover,
+#HEADLINE50>.ladi-headline:hover,
+#HEADLINE51>.ladi-headline:hover,
+#HEADLINE60>.ladi-headline:hover,
+#HEADLINE108>.ladi-headline:hover,
+#HEADLINE102>.ladi-headline:hover,
+#HEADLINE106>.ladi-headline:hover,
+#HEADLINE107>.ladi-headline:hover,
+#HEADLINE121>.ladi-headline:hover,
+#HEADLINE122>.ladi-headline:hover,
+#HEADLINE123>.ladi-headline:hover,
+#HEADLINE124>.ladi-headline:hover,
+#HEADLINE125>.ladi-headline:hover,
+#HEADLINE126>.ladi-headline:hover,
+#HEADLINE127x>.ladi-headline:hover,
+#HEADLINE128x>.ladi-headline:hover,
+#HEADLINE129x>.ladi-headline:hover,
+#HEADLINE130x>.ladi-headline:hover,
+#HEADLINE131x>.ladi-headline:hover,
+#HEADLINE132x>.ladi-headline:hover,
+#HEADLINE127>.ladi-headline:hover,
+#HEADLINE128>.ladi-headline:hover,
+#HEADLINE129>.ladi-headline:hover,
+#HEADLINE130>.ladi-headline:hover,
+#HEADLINE131>.ladi-headline:hover,
+#HEADLINE132>.ladi-headline:hover,
+#HEADLINE133>.ladi-headline:hover,
+#HEADLINE134>.ladi-headline:hover,
+#HEADLINE135>.ladi-headline:hover,
+#HEADLINE136>.ladi-headline:hover,
+#HEADLINE137>.ladi-headline:hover,
+#HEADLINE138>.ladi-headline:hover,
+#HEADLINE139>.ladi-headline:hover,
+#HEADLINE140>.ladi-headline:hover,
+#HEADLINE141>.ladi-headline:hover,
+#HEADLINE142>.ladi-headline:hover,
+#HEADLINE143>.ladi-headline:hover,
+#HEADLINE144>.ladi-headline:hover,
+#HEADLINE145>.ladi-headline:hover,
+#HEADLINE146>.ladi-headline:hover,
+#HEADLINE147>.ladi-headline:hover,
+#HEADLINE148>.ladi-headline:hover,
+#HEADLINE149>.ladi-headline:hover,
+#HEADLINE150>.ladi-headline:hover,
+#HEADLINE151>.ladi-headline:hover,
+#HEADLINE152>.ladi-headline:hover,
+#HEADLINE153>.ladi-headline:hover,
+#HEADLINE154>.ladi-headline:hover,
+#HEADLINE155>.ladi-headline:hover,
+#HEADLINE156>.ladi-headline:hover,
+#HEADLINE157>.ladi-headline:hover,
+#HEADLINE158>.ladi-headline:hover,
+#HEADLINE159>.ladi-headline:hover,
+#BOX37>.ladi-box:hover,
+#HEADLINE196>.ladi-headline:hover,
+#HEADLINE197>.ladi-headline:hover,
+#HEADLINE198>.ladi-headline:hover,
+#HEADLINE199>.ladi-headline:hover,
+#HEADLINE200>.ladi-headline:hover,
+#HEADLINE201>.ladi-headline:hover,
+#HEADLINE202>.ladi-headline:hover,
+#HEADLINE203>.ladi-headline:hover,
+#HEADLINE204>.ladi-headline:hover,
+#HEADLINE205>.ladi-headline:hover,
+#HEADLINE206>.ladi-headline:hover,
+#HEADLINE207>.ladi-headline:hover,
+#HEADLINE208>.ladi-headline:hover,
+#HEADLINE209>.ladi-headline:hover,
+#HEADLINE210>.ladi-headline:hover,
+#HEADLINE211>.ladi-headline:hover,
+#HEADLINE212>.ladi-headline:hover,
+#HEADLINE213>.ladi-headline:hover,
+#HEADLINE214>.ladi-headline:hover,
+#HEADLINE215>.ladi-headline:hover,
+#HEADLINE216>.ladi-headline:hover,
+#HEADLINE217>.ladi-headline:hover,
+#HEADLINE218>.ladi-headline:hover,
+#HEADLINE219>.ladi-headline:hover,
+#HEADLINE220>.ladi-headline:hover,
+#HEADLINE221>.ladi-headline:hover,
+#HEADLINE222>.ladi-headline:hover,
+#HEADLINE223>.ladi-headline:hover,
+#HEADLINE224>.ladi-headline:hover,
+#HEADLINE225>.ladi-headline:hover,
+#HEADLINE226>.ladi-headline:hover,
+#HEADLINE227>.ladi-headline:hover,
+#HEADLINE228>.ladi-headline:hover,
+#HEADLINE229>.ladi-headline:hover,
+#HEADLINE230>.ladi-headline:hover,
+#HEADLINE231>.ladi-headline:hover,
+#HEADLINE232>.ladi-headline:hover,
+#HEADLINE233>.ladi-headline:hover,
+#BOX9>.ladi-box:hover,
+#BOX10>.ladi-box:hover,
+#HEADLINE61>.ladi-headline:hover,
+#IMAGE44:hover>.ladi-image,
+#HEADLINE64>.ladi-headline:hover,
+#HEADLINE66>.ladi-headline:hover,
+#HEADLINE67>.ladi-headline:hover,
+#HEADLINE63>.ladi-headline:hover,
+#HEADLINE68>.ladi-headline:hover,
+#HEADLINE69>.ladi-headline:hover,
+#HEADLINE65>.ladi-headline:hover,
+#HEADLINE70>.ladi-headline:hover,
+#HEADLINE71>.ladi-headline:hover,
+#BOX16>.ladi-box:hover,
+#IMAGE33:hover>.ladi-image,
+#IMAGE32:hover>.ladi-image,
+#BUTTON2>.ladi-button:hover,
+#BUTTON_TEXT2>.ladi-headline:hover,
+#HEADLINE84>.ladi-headline:hover,
+#HEADLINE85>.ladi-headline:hover,
+#HEADLINE86>.ladi-headline:hover,
+#BOX28>.ladi-box:hover,
+#HEADLINE94>.ladi-headline:hover,
+#BOX26>.ladi-box:hover,
+#BOX33>.ladi-box:hover,
+#HEADLINE88>.ladi-headline:hover,
+#HEADLINE89>.ladi-headline:hover,
+#BOX36>.ladi-box:hover,
+#BOX27>.ladi-box:hover,
+#HEADLINE91>.ladi-headline:hover,
+#HEADLINE92>.ladi-headline:hover,
+#HEADLINE93>.ladi-headline:hover,
+#IMAGE46:hover>.ladi-image,
+#BOX30>.ladi-box:hover,
+#BOX34>.ladi-box:hover,
+#BOX35>.ladi-box:hover {
   opacity: 1;
 }
 
@@ -2345,7 +2182,7 @@ body {
   left: 0px;
 }
 
-#BOX2 > .ladi-box {
+#BOX2>.ladi-box {
   background-image: linear-gradient(rgba(253, 251, 251, 0), rgba(2, 2, 2, 0.7));
   background-color: initial;
   background-size: initial;
@@ -2355,9 +2192,9 @@ body {
   background-attachment: initial;
 }
 
-#BOX2 > .ladi-box,
-#BOX10 > .ladi-box,
-#BOX33 > .ladi-box {
+#BOX2>.ladi-box,
+#BOX10>.ladi-box,
+#BOX33>.ladi-box {
   -webkit-background-clip: initial;
 }
 
@@ -2372,49 +2209,49 @@ body {
   left: 0px;
 }
 
-#IMAGE26 > .ladi-image > .ladi-image-background,
+#IMAGE26>.ladi-image>.ladi-image-background,
 #IMAGE25,
-#IMAGE25 > .ladi-image > .ladi-image-background,
+#IMAGE25>.ladi-image>.ladi-image-background,
 #IMAGE28,
-#IMAGE28 > .ladi-image > .ladi-image-background,
+#IMAGE28>.ladi-image>.ladi-image-background,
 #IMAGE27,
-#IMAGE27 > .ladi-image > .ladi-image-background,
+#IMAGE27>.ladi-image>.ladi-image-background,
 #IMAGE32,
-#IMAGE32 > .ladi-image > .ladi-image-background {
+#IMAGE32>.ladi-image>.ladi-image-background {
   width: 420px;
   height: 420px;
 }
 
-#IMAGE26 > .ladi-image > .ladi-image-background,
-#IMAGE25 > .ladi-image > .ladi-image-background,
-#IMAGE28 > .ladi-image > .ladi-image-background,
-#IMAGE45 > .ladi-image > .ladi-image-background,
-#IMAGE29 > .ladi-image > .ladi-image-background,
-#IMAGE27 > .ladi-image > .ladi-image-background,
-#IMAGE44 > .ladi-image > .ladi-image-background,
-#IMAGE32 > .ladi-image > .ladi-image-background {
+#IMAGE26>.ladi-image>.ladi-image-background,
+#IMAGE25>.ladi-image>.ladi-image-background,
+#IMAGE28>.ladi-image>.ladi-image-background,
+#IMAGE45>.ladi-image>.ladi-image-background,
+#IMAGE29>.ladi-image>.ladi-image-background,
+#IMAGE27>.ladi-image>.ladi-image-background,
+#IMAGE44>.ladi-image>.ladi-image-background,
+#IMAGE32>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s750x750/6322a62f2dad980013bb5005/bd95284c466fe631bf7e-20240706091144-0xksq.jpg");
 }
 
-#IMAGE26 > .ladi-image,
-#IMAGE45 > .ladi-image,
-#IMAGE29 > .ladi-image,
-#IMAGE27 > .ladi-image,
-#IMAGE44 > .ladi-image,
-#IMAGE33 > .ladi-image,
-#IMAGE46 > .ladi-image {
+#IMAGE26>.ladi-image,
+#IMAGE45>.ladi-image,
+#IMAGE29>.ladi-image,
+#IMAGE27>.ladi-image,
+#IMAGE44>.ladi-image,
+#IMAGE33>.ladi-image,
+#IMAGE46>.ladi-image {
   transform: perspective(1000px) rotateX(180deg);
   filter: brightness(106%);
 }
 
-#IMAGE25 > .ladi-image,
-#IMAGE28 > .ladi-image,
-#IMAGE32 > .ladi-image {
+#IMAGE25>.ladi-image,
+#IMAGE28>.ladi-image,
+#IMAGE32>.ladi-image {
   filter: brightness(106%);
 }
 
 #IMAGE17,
-#IMAGE17 > .ladi-image > .ladi-image-background {
+#IMAGE17>.ladi-image>.ladi-image-background {
   width: 480.2px;
   height: 480.2px;
 }
@@ -2424,7 +2261,7 @@ body {
   left: 0px;
 }
 
-#IMAGE17 > .ladi-image > .ladi-image-background {
+#IMAGE17>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s800x800/6322a62f2dad980013bb5005/fdf-20250420031246-imior.png");
 }
 
@@ -2434,7 +2271,7 @@ body {
   left: 30.5px;
 }
 
-#HEADLINE6 > .ladi-headline {
+#HEADLINE6>.ladi-headline {
   font-family: RUJHYXJhbWuZCNZWRpdWudHRm;
   font-size: 26px;
   line-height: 1.4;
@@ -2443,29 +2280,29 @@ body {
   text-align: center;
 }
 
-#HEADLINE6.ladi-animation > .ladi-headline,
-#HEADLINE7.ladi-animation > .ladi-headline,
-#HEADLINE8.ladi-animation > .ladi-headline,
-#HEADLINE99.ladi-animation > .ladi-headline,
-#HEADLINE100.ladi-animation > .ladi-headline,
-#HEADLINE101.ladi-animation > .ladi-headline,
-#HEADLINE48.ladi-animation > .ladi-headline,
-#HEADLINE108.ladi-animation > .ladi-headline,
-#HEADLINE109.ladi-animation > .ladi-headline,
-#HEADLINE102.ladi-animation > .ladi-headline,
-#HEADLINE103.ladi-animation > .ladi-headline,
-#HEADLINE104.ladi-animation > .ladi-headline,
-#HEADLINE105.ladi-animation > .ladi-headline,
-#HEADLINE61.ladi-animation > .ladi-headline,
-#GROUP15.ladi-animation > .ladi-group,
-#GROUP16.ladi-animation > .ladi-group,
-#GROUP17.ladi-animation > .ladi-group,
-#HEADLINE74.ladi-animation > .ladi-headline,
-#BOX20.ladi-animation > .ladi-box,
-#HEADLINE76.ladi-animation > .ladi-headline,
-#BUTTON2.ladi-animation > .ladi-button,
-#GROUP24.ladi-animation > .ladi-group,
-#HEADLINE87.ladi-animation > .ladi-headline {
+#HEADLINE6.ladi-animation>.ladi-headline,
+#HEADLINE7.ladi-animation>.ladi-headline,
+#HEADLINE8.ladi-animation>.ladi-headline,
+#HEADLINE99.ladi-animation>.ladi-headline,
+#HEADLINE100.ladi-animation>.ladi-headline,
+#HEADLINE101.ladi-animation>.ladi-headline,
+#HEADLINE48.ladi-animation>.ladi-headline,
+#HEADLINE108.ladi-animation>.ladi-headline,
+#HEADLINE109.ladi-animation>.ladi-headline,
+#HEADLINE102.ladi-animation>.ladi-headline,
+#HEADLINE103.ladi-animation>.ladi-headline,
+#HEADLINE104.ladi-animation>.ladi-headline,
+#HEADLINE105.ladi-animation>.ladi-headline,
+#HEADLINE61.ladi-animation>.ladi-headline,
+#GROUP15.ladi-animation>.ladi-group,
+#GROUP16.ladi-animation>.ladi-group,
+#GROUP17.ladi-animation>.ladi-group,
+#HEADLINE74.ladi-animation>.ladi-headline,
+#BOX20.ladi-animation>.ladi-box,
+#HEADLINE76.ladi-animation>.ladi-headline,
+#BUTTON2.ladi-animation>.ladi-button,
+#GROUP24.ladi-animation>.ladi-group,
+#HEADLINE87.ladi-animation>.ladi-headline {
   animation-name: fadeInUp;
   animation-delay: 1s;
   animation-duration: 1s;
@@ -2478,7 +2315,7 @@ body {
   left: 73px;
 }
 
-#HEADLINE7 > .ladi-headline {
+#HEADLINE7>.ladi-headline {
   font-family: MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY;
   font-size: 36px;
   line-height: 1.6;
@@ -2492,7 +2329,7 @@ body {
   left: 106.5px;
 }
 
-#HEADLINE8 > .ladi-headline {
+#HEADLINE8>.ladi-headline {
   font-family: QSTUSQUUSUGQUULUFRElVTSUVEY;
   font-size: 35px;
   line-height: 1.4;
@@ -2508,7 +2345,7 @@ body {
   left: 64.5px;
 }
 
-#BOX3 > .ladi-box {
+#BOX3>.ladi-box {
   background-image: url("https://p9-sg.tiktokcdn.com/tiktok-obj/23a55afe680734fccfdcac8fe83ec98b~tplv-photomode-zoomcover:480:480.jpeg");
   background-size: cover;
   background-origin: content-box;
@@ -2517,14 +2354,14 @@ body {
   background-attachment: scroll;
 }
 
-#BOX3 > .ladi-box,
-#BOX27 > .ladi-box,
-#BOX30 > .ladi-box {
+#BOX3>.ladi-box,
+#BOX27>.ladi-box,
+#BOX30>.ladi-box {
   box-shadow: rgb(0, 0, 0) 0px 7px 20px -17px;
 }
 
-#BOX3.ladi-animation > .ladi-box,
-#BOX17.ladi-animation > .ladi-box {
+#BOX3.ladi-animation>.ladi-box,
+#BOX17.ladi-animation>.ladi-box {
   animation-name: flipInY;
   animation-delay: 1s;
   animation-duration: 1s;
@@ -2542,8 +2379,8 @@ body {
   width: 365px;
 }
 
-#HEADLINE99 > .ladi-headline,
-#HEADLINE100 > .ladi-headline {
+#HEADLINE99>.ladi-headline,
+#HEADLINE100>.ladi-headline {
   font-family: MUZUViWSVAtSEFTVEVHSSPVEY;
   font-size: 129px;
   line-height: 1.6;
@@ -2564,7 +2401,7 @@ body {
   left: 29px;
 }
 
-#HEADLINE101 > .ladi-headline {
+#HEADLINE101>.ladi-headline {
   font-family: MUZUViWSVAtQVJDSVRUWUEtQkVHQVRSSSPVEY;
   font-size: 120px;
   line-height: 1.6;
@@ -2588,12 +2425,12 @@ body {
   left: 1px;
 }
 
-#IMAGE45 > .ladi-image > .ladi-image-background,
+#IMAGE45>.ladi-image>.ladi-image-background,
 #IMAGE29,
-#IMAGE29 > .ladi-image > .ladi-image-background,
+#IMAGE29>.ladi-image>.ladi-image-background,
 #GROUP49,
 #IMAGE44,
-#IMAGE44 > .ladi-image > .ladi-image-background {
+#IMAGE44>.ladi-image>.ladi-image-background {
   width: 420px;
   height: 427px;
 }
@@ -2609,40 +2446,19 @@ body {
   left: 0px;
 }
 
-#BOX31 > .ladi-box,
-#BOX37 > .ladi-box,
-#BOX16 > .ladi-box,
-#FORM2
-  .ladi-form
-  [data-form-checkout-item="product"]
-  .ladi-form-checkout-payment-check.multiple.checked:before,
-#FORM2
-  .ladi-form
-  [data-form-checkout-item="product"]
-  .ladi-form-checkout-payment-check:not(.multiple).checked:before,
-#FORM2
-  .ladi-form
-  [data-form-checkout-item="payment"]
-  .ladi-form-checkout-payment-check.checked:before,
-#FORM2
-  .ladi-form
-  [data-form-checkout-item="fee_shipping"]
-  .ladi-form-checkout-payment-check.checked:before,
+#BOX31>.ladi-box,
+#BOX37>.ladi-box,
+#BOX16>.ladi-box,
+#FORM2 .ladi-form [data-form-checkout-item="product"] .ladi-form-checkout-payment-check.multiple.checked:before,
+#FORM2 .ladi-form [data-form-checkout-item="product"] .ladi-form-checkout-payment-check:not(.multiple).checked:before,
+#FORM2 .ladi-form [data-form-checkout-item="payment"] .ladi-form-checkout-payment-check.checked:before,
+#FORM2 .ladi-form [data-form-checkout-item="fee_shipping"] .ladi-form-checkout-payment-check.checked:before,
 #FORM2 .ladi-form-item-container .ladi-form-quantity .button,
-#FORM2
-  .ladi-form
-  [data-form-checkout-item="coupon_code"]
-  .content-discount-block
-  .placeholder
-  i,
+#FORM2 .ladi-form [data-form-checkout-item="coupon_code"] .content-discount-block .placeholder i,
 #FORM2 .ladi-form-checkout-payment-quantity .up:before,
 #FORM2 .ladi-form-checkout-payment-quantity .down:before,
-#FORM2
-  [data-form-checkout-item="payment"]
-  .ladi-form-item
-  .ladi-form-checkout-payment-content
-  div:before,
-#BOX28 > .ladi-box {
+#FORM2 [data-form-checkout-item="payment"] .ladi-form-item .ladi-form-checkout-payment-content div:before,
+#BOX28>.ladi-box {
   background-color: rgb(49, 81, 37);
 }
 
@@ -2658,7 +2474,7 @@ body {
 
 #GROUP5,
 #IMAGE4,
-#IMAGE4 > .ladi-image > .ladi-image-background {
+#IMAGE4>.ladi-image>.ladi-image-background {
   width: 280px;
   height: 280px;
 }
@@ -2668,7 +2484,7 @@ body {
   left: 164.5px;
 }
 
-#GROUP5.ladi-animation > .ladi-group {
+#GROUP5.ladi-animation>.ladi-group {
   animation-name: rotateInDownRight;
   animation-delay: 1s;
   animation-duration: 1s;
@@ -2682,7 +2498,7 @@ body {
   left: 55.5px;
 }
 
-#BOX5 > .ladi-box {
+#BOX5>.ladi-box {
   background-image: url("https://p9-sg.tiktokcdn.com/tiktok-obj/700d8f4f5a55a9f1ba449378f2538eea~tplv-photomode-zoomcover:480:480.jpeg");
   background-size: cover;
   background-origin: content-box;
@@ -2692,20 +2508,20 @@ body {
   transform: rotate(9deg);
 }
 
-#BOX5 > .ladi-box:hover,
-#BOX6 > .ladi-box:hover,
-#HEADLINE90 > .ladi-headline:hover {
+#BOX5>.ladi-box:hover,
+#BOX6>.ladi-box:hover,
+#HEADLINE90>.ladi-headline:hover {
   transform: rotate(0deg);
   opacity: 1;
 }
 
-#IMAGE4 > .ladi-image > .ladi-image-background {
+#IMAGE4>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s600x600/6322a62f2dad980013bb5005/gedgvdf-20250323082653-8an0w.png");
 }
 
 #GROUP23,
 #IMAGE3,
-#IMAGE3 > .ladi-image > .ladi-image-background {
+#IMAGE3>.ladi-image>.ladi-image-background {
   width: 302.75px;
   height: 302.75px;
 }
@@ -2715,7 +2531,7 @@ body {
   left: -14.25px;
 }
 
-#GROUP23.ladi-animation > .ladi-group {
+#GROUP23.ladi-animation>.ladi-group {
   animation-name: rotateInDownLeft;
   animation-delay: 1s;
   animation-duration: 1s;
@@ -2729,7 +2545,7 @@ body {
   left: 47.25px;
 }
 
-#BOX6 > .ladi-box {
+#BOX6>.ladi-box {
   background-image: url("https://p16-sign-sg.tiktokcdn.com/tiktok-obj/64fd92ea824e3ec8b5cf37e57df999b6~tplv-tiktokx-origin.image?dr=14575&refresh_token=2e96ad8c&x-expires=2080054800&x-signature=6yowY7UxNtn9QooPUKW4SazhuXw%3D&t=4d5b0474&ps=13740610&shp=f21f527a&shcp=9b759fb9&idc=my2");
   background-size: cover;
   background-origin: content-box;
@@ -2739,7 +2555,7 @@ body {
   transform: rotate(-9deg);
 }
 
-#IMAGE3 > .ladi-image > .ladi-image-background {
+#IMAGE3>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s650x650/6322a62f2dad980013bb5005/gedgvdf-20250323082614-an3s6.png");
 }
 
@@ -2753,7 +2569,7 @@ body {
   left: 18.5px;
 }
 
-#HEADLINE48 > .ladi-headline {
+#HEADLINE48>.ladi-headline {
   font-family: RUJHYXJhbWuZCNZWRpdWudHRm;
   font-size: 19px;
   line-height: 1.5;
@@ -2769,8 +2585,8 @@ body {
   left: 22.5px;
 }
 
-#HEADLINE49 > .ladi-headline,
-#HEADLINE50 > .ladi-headline {
+#HEADLINE49>.ladi-headline,
+#HEADLINE50>.ladi-headline {
   font-family: QSTUSQUUSUGQUULUFRElVTSUVEY;
   font-size: 47px;
   line-height: 1.5;
@@ -2780,11 +2596,11 @@ body {
   text-align: center;
 }
 
-#HEADLINE49.ladi-animation > .ladi-headline,
-#GROUP32.ladi-animation > .ladi-group,
-#HEADLINE73.ladi-animation > .ladi-headline,
-#BOX23.ladi-animation > .ladi-box,
-#BOX25.ladi-animation > .ladi-box {
+#HEADLINE49.ladi-animation>.ladi-headline,
+#GROUP32.ladi-animation>.ladi-group,
+#HEADLINE73.ladi-animation>.ladi-headline,
+#BOX23.ladi-animation>.ladi-box,
+#BOX25.ladi-animation>.ladi-box {
   animation-name: fadeInLeft;
   animation-delay: 1s;
   animation-duration: 1s;
@@ -2797,15 +2613,15 @@ body {
   left: 24.5px;
 }
 
-#HEADLINE50.ladi-animation > .ladi-headline,
-#HEADLINE51.ladi-animation > .ladi-headline,
-#GROUP31.ladi-animation > .ladi-group,
-#HEADLINE106.ladi-animation > .ladi-headline,
-#HEADLINE107.ladi-animation > .ladi-headline,
-#LINE5.ladi-animation > .ladi-line,
-#BOX18.ladi-animation > .ladi-box,
-#BOX22.ladi-animation > .ladi-box,
-#BOX24.ladi-animation > .ladi-box {
+#HEADLINE50.ladi-animation>.ladi-headline,
+#HEADLINE51.ladi-animation>.ladi-headline,
+#GROUP31.ladi-animation>.ladi-group,
+#HEADLINE106.ladi-animation>.ladi-headline,
+#HEADLINE107.ladi-animation>.ladi-headline,
+#LINE5.ladi-animation>.ladi-line,
+#BOX18.ladi-animation>.ladi-box,
+#BOX22.ladi-animation>.ladi-box,
+#BOX24.ladi-animation>.ladi-box {
   animation-name: fadeInRight;
   animation-delay: 1s;
   animation-duration: 1s;
@@ -2823,7 +2639,7 @@ body {
   left: 138.5px;
 }
 
-#HEADLINE51 > .ladi-headline {
+#HEADLINE51>.ladi-headline {
   font-family: MUZUViWSVAtQVJDSVRUWUEtQkVHQVRSSSPVEY;
   font-size: 172.53px;
   line-height: 1.5;
@@ -2841,10 +2657,10 @@ body {
   left: 131.5px;
 }
 
-#GROUP10.ladi-animation > .ladi-group,
-#IMAGE56.ladi-animation > .ladi-image,
-#IMAGE58.ladi-animation > .ladi-image,
-#HEADLINE75.ladi-animation > .ladi-headline {
+#GROUP10.ladi-animation>.ladi-group,
+#IMAGE56.ladi-animation>.ladi-image,
+#IMAGE58.ladi-animation>.ladi-image,
+#HEADLINE75.ladi-animation>.ladi-headline {
   animation-name: pulse;
   animation-delay: 0s;
   animation-duration: 1s;
@@ -2857,7 +2673,7 @@ body {
   left: 20px;
 }
 
-#HEADLINE60 > .ladi-headline {
+#HEADLINE60>.ladi-headline {
   font-family: RUJHYXJhbWuZCNZWRpdWudHRm;
   font-size: 19px;
   line-height: 1.5;
@@ -2868,7 +2684,7 @@ body {
 }
 
 #IMAGE6,
-#IMAGE6 > .ladi-image > .ladi-image-background {
+#IMAGE6>.ladi-image>.ladi-image-background {
   width: 24.5px;
   height: 24.5px;
 }
@@ -2878,7 +2694,7 @@ body {
   left: 0px;
 }
 
-#IMAGE6 > .ladi-image > .ladi-image-background {
+#IMAGE6>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s350x350/6322a62f2dad980013bb5005/untitled-3-20250420023802-nwxb4.png");
 }
 
@@ -2889,7 +2705,7 @@ body {
   padding: 0px 3rem;
 }
 
-#HEADLINE108 > .ladi-headline {
+#HEADLINE108>.ladi-headline {
   font-family: RUJHYXJhbWuZCNZWRpdWudHRm;
   font-size: 21px;
   line-height: 1.5;
@@ -2905,8 +2721,8 @@ body {
   left: 0;
 }
 
-#HEADLINE109 > .ladi-headline,
-#HEADLINE103 > .ladi-headline {
+#HEADLINE109>.ladi-headline,
+#HEADLINE103>.ladi-headline {
   font-family: RUJHYXJhbWuZCNZWRpdWudHRm;
   font-size: 17px;
   line-height: 1.6;
@@ -2919,7 +2735,7 @@ body {
   left: 18px;
 }
 
-#HEADLINE102 > .ladi-headline {
+#HEADLINE102>.ladi-headline {
   font-family: RUJHYXJhbWuZCNZWRpdWudHRm;
   font-size: 21px;
   line-height: 1.5;
@@ -2953,7 +2769,7 @@ body {
   left: 76.75px;
 }
 
-#HEADLINE104 > .ladi-headline {
+#HEADLINE104>.ladi-headline {
   font-family: RUJHYXJhbWuZCNZWRpdWudHRm;
   font-size: 20px;
   line-height: 1.6;
@@ -2969,7 +2785,7 @@ body {
   left: 101.5px;
 }
 
-#HEADLINE105 > .ladi-headline {
+#HEADLINE105>.ladi-headline {
   font-family: QSTUSQUUSUGQUULUFRElVTSUVEY;
   font-size: 46.54px;
   line-height: 1.6;
@@ -3002,23 +2818,23 @@ body {
   left: 9.5px;
 }
 
-#LINE9 > .ladi-line > .ladi-line-container,
-#LINE10 > .ladi-line > .ladi-line-container,
-#LINE11 > .ladi-line > .ladi-line-container,
-#LINE12 > .ladi-line > .ladi-line-container {
+#LINE9>.ladi-line>.ladi-line-container,
+#LINE10>.ladi-line>.ladi-line-container,
+#LINE11>.ladi-line>.ladi-line-container,
+#LINE12>.ladi-line>.ladi-line-container {
   border-top: 1px solid rgb(49, 81, 37);
   border-right: 1px solid rgb(49, 81, 37);
   border-bottom: 1px solid rgb(49, 81, 37);
   border-left: 0px !important;
 }
 
-#LINE9 > .ladi-line,
-#LINE10 > .ladi-line,
-#LINE11 > .ladi-line,
-#LINE12 > .ladi-line,
-#LINE5 > .ladi-line,
-#LINE7 > .ladi-line,
-#LINE8 > .ladi-line {
+#LINE9>.ladi-line,
+#LINE10>.ladi-line,
+#LINE11>.ladi-line,
+#LINE12>.ladi-line,
+#LINE5>.ladi-line,
+#LINE7>.ladi-line,
+#LINE8>.ladi-line {
   width: 100%;
   padding: 8px 0px;
 }
@@ -3030,8 +2846,8 @@ body {
   left: 0px;
 }
 
-#HEADLINE106 > .ladi-headline,
-#HEADLINE107 > .ladi-headline {
+#HEADLINE106>.ladi-headline,
+#HEADLINE107>.ladi-headline {
   font-family: RUJHYXJhbWuZCNZWRpdWudHRm;
   font-size: 20px;
   line-height: 1.4;
@@ -3060,19 +2876,19 @@ body {
 }
 
 #LINE13 {
-      height: 90px;
-    top: 0px;
-    left: 185px;
+  height: 90px;
+  top: 0px;
+  left: 185px;
 }
 
-#LINE13 > .ladi-line > .ladi-line-container {
+#LINE13>.ladi-line>.ladi-line-container {
   border-top: 0px !important;
   border-right: 2px solid rgb(49, 81, 37);
   border-bottom: 2px solid rgb(49, 81, 37);
   border-left: 2px solid rgb(49, 81, 37);
 }
 
-#LINE13 > .ladi-line {
+#LINE13>.ladi-line {
   height: 100%;
   padding: 0px 8px;
 }
@@ -3095,8 +2911,8 @@ body {
   left: 32px;
 }
 
-#HEADLINE112 > .ladi-headline,
-#HEADLINE110 > .ladi-headline {
+#HEADLINE112>.ladi-headline,
+#HEADLINE110>.ladi-headline {
   font-family: TESQSSRUdVTEFSLlRURg;
   font-size: 17px;
   line-height: 1.6;
@@ -3111,8 +2927,8 @@ body {
   left: 0px;
 }
 
-#HEADLINE113 > .ladi-headline,
-#HEADLINE111 > .ladi-headline {
+#HEADLINE113>.ladi-headline,
+#HEADLINE111>.ladi-headline {
   font-family: TESQSSRUdVTEFSLlRURg;
   font-size: 16px;
   line-height: 1.6;
@@ -3126,7 +2942,7 @@ body {
 }
 
 #IMAGE54,
-#IMAGE54 > .ladi-image > .ladi-image-background {
+#IMAGE54>.ladi-image>.ladi-image-background {
   width: 106.5px;
   height: 66.0641px;
 }
@@ -3136,12 +2952,12 @@ body {
   left: 153.25px;
 }
 
-#IMAGE54 > .ladi-image > .ladi-image-background {
+#IMAGE54>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s450x400/6322a62f2dad980013bb5005/untitled-1_0002_untitled-1_0005_vector-smart-object-20250619035202-hmuce-1-20250804081821-l2w1o.png");
 }
 
 #IMAGE55,
-#IMAGE55 > .ladi-image > .ladi-image-background {
+#IMAGE55>.ladi-image>.ladi-image-background {
   width: 64.9616px;
   height: 58.2083px;
 }
@@ -3151,7 +2967,7 @@ body {
   left: 178.519px;
 }
 
-#IMAGE55 > .ladi-image > .ladi-image-background {
+#IMAGE55>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s400x400/6322a62f2dad980013bb5005/untitled-1_0001_untitled-1_0004_vector-smart-object-20250619035202-sifjn-20250804081821-6svto.png");
 }
 
@@ -3172,8 +2988,8 @@ body {
   left: 113px;
 }
 
-#HEADLINE121 > .ladi-headline,
-#HEADLINE196 > .ladi-headline {
+#HEADLINE121>.ladi-headline,
+#HEADLINE196>.ladi-headline {
   font-family: MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY;
   font-size: 37.65px;
   line-height: 1.6;
@@ -3181,9 +2997,9 @@ body {
   text-align: center;
 }
 
-#HEADLINE121.ladi-animation > .ladi-headline,
-#HEADLINE196.ladi-animation > .ladi-headline,
-#HEADLINE83.ladi-animation > .ladi-headline {
+#HEADLINE121.ladi-animation>.ladi-headline,
+#HEADLINE196.ladi-animation>.ladi-headline,
+#HEADLINE83.ladi-animation>.ladi-headline {
   animation-name: pulse;
   animation-delay: 1s;
   animation-duration: 1s;
@@ -3267,74 +3083,74 @@ body {
   left: 117.5px;
 }
 
-#HEADLINE122 > .ladi-headline,
-#HEADLINE123 > .ladi-headline,
-#HEADLINE124 > .ladi-headline,
-#HEADLINE125 > .ladi-headline,
-#HEADLINE126 > .ladi-headline,
-#HEADLINE127 > .ladi-headline,
-#HEADLINE128 > .ladi-headline,
-#HEADLINE129 > .ladi-headline,
-#HEADLINE130 > .ladi-headline,
-#HEADLINE131 > .ladi-headline,
-#HEADLINE132 > .ladi-headline,
-#HEADLINE133 > .ladi-headline,
-#HEADLINE127x > .ladi-headline,
-#HEADLINE128x > .ladi-headline,
-#HEADLINE129x > .ladi-headline,
-#HEADLINE130x > .ladi-headline,
-#HEADLINE131x > .ladi-headline,
-#HEADLINE132x > .ladi-headline,
-#HEADLINE133x > .ladi-headline,
-#HEADLINE134 > .ladi-headline,
-#HEADLINE135 > .ladi-headline,
-#HEADLINE136 > .ladi-headline,
-#HEADLINE137 > .ladi-headline,
-#HEADLINE138 > .ladi-headline,
-#HEADLINE146 > .ladi-headline,
-#HEADLINE147 > .ladi-headline,
-#HEADLINE148 > .ladi-headline,
-#HEADLINE149 > .ladi-headline,
-#HEADLINE150 > .ladi-headline,
-#HEADLINE151 > .ladi-headline,
-#HEADLINE152 > .ladi-headline,
-#HEADLINE153 > .ladi-headline,
-#HEADLINE154 > .ladi-headline,
-#HEADLINE155 > .ladi-headline,
-#HEADLINE156 > .ladi-headline,
-#HEADLINE157 > .ladi-headline,
-#HEADLINE158 > .ladi-headline,
-#HEADLINE159 > .ladi-headline,
-#HEADLINE197 > .ladi-headline,
-#HEADLINE198 > .ladi-headline,
-#HEADLINE199 > .ladi-headline,
-#HEADLINE200 > .ladi-headline,
-#HEADLINE201 > .ladi-headline,
-#HEADLINE202 > .ladi-headline,
-#HEADLINE203 > .ladi-headline,
-#HEADLINE204 > .ladi-headline,
-#HEADLINE205 > .ladi-headline,
-#HEADLINE206 > .ladi-headline,
-#HEADLINE207 > .ladi-headline,
-#HEADLINE208 > .ladi-headline,
-#HEADLINE209 > .ladi-headline,
-#HEADLINE210 > .ladi-headline,
-#HEADLINE211 > .ladi-headline,
-#HEADLINE212 > .ladi-headline,
-#HEADLINE220 > .ladi-headline,
-#HEADLINE221 > .ladi-headline,
-#HEADLINE222 > .ladi-headline,
-#HEADLINE223 > .ladi-headline,
-#HEADLINE224 > .ladi-headline,
-#HEADLINE225 > .ladi-headline,
-#HEADLINE226 > .ladi-headline,
-#HEADLINE227 > .ladi-headline,
-#HEADLINE228 > .ladi-headline,
-#HEADLINE229 > .ladi-headline,
-#HEADLINE230 > .ladi-headline,
-#HEADLINE231 > .ladi-headline,
-#HEADLINE232 > .ladi-headline,
-#HEADLINE233 > .ladi-headline {
+#HEADLINE122>.ladi-headline,
+#HEADLINE123>.ladi-headline,
+#HEADLINE124>.ladi-headline,
+#HEADLINE125>.ladi-headline,
+#HEADLINE126>.ladi-headline,
+#HEADLINE127>.ladi-headline,
+#HEADLINE128>.ladi-headline,
+#HEADLINE129>.ladi-headline,
+#HEADLINE130>.ladi-headline,
+#HEADLINE131>.ladi-headline,
+#HEADLINE132>.ladi-headline,
+#HEADLINE133>.ladi-headline,
+#HEADLINE127x>.ladi-headline,
+#HEADLINE128x>.ladi-headline,
+#HEADLINE129x>.ladi-headline,
+#HEADLINE130x>.ladi-headline,
+#HEADLINE131x>.ladi-headline,
+#HEADLINE132x>.ladi-headline,
+#HEADLINE133x>.ladi-headline,
+#HEADLINE134>.ladi-headline,
+#HEADLINE135>.ladi-headline,
+#HEADLINE136>.ladi-headline,
+#HEADLINE137>.ladi-headline,
+#HEADLINE138>.ladi-headline,
+#HEADLINE146>.ladi-headline,
+#HEADLINE147>.ladi-headline,
+#HEADLINE148>.ladi-headline,
+#HEADLINE149>.ladi-headline,
+#HEADLINE150>.ladi-headline,
+#HEADLINE151>.ladi-headline,
+#HEADLINE152>.ladi-headline,
+#HEADLINE153>.ladi-headline,
+#HEADLINE154>.ladi-headline,
+#HEADLINE155>.ladi-headline,
+#HEADLINE156>.ladi-headline,
+#HEADLINE157>.ladi-headline,
+#HEADLINE158>.ladi-headline,
+#HEADLINE159>.ladi-headline,
+#HEADLINE197>.ladi-headline,
+#HEADLINE198>.ladi-headline,
+#HEADLINE199>.ladi-headline,
+#HEADLINE200>.ladi-headline,
+#HEADLINE201>.ladi-headline,
+#HEADLINE202>.ladi-headline,
+#HEADLINE203>.ladi-headline,
+#HEADLINE204>.ladi-headline,
+#HEADLINE205>.ladi-headline,
+#HEADLINE206>.ladi-headline,
+#HEADLINE207>.ladi-headline,
+#HEADLINE208>.ladi-headline,
+#HEADLINE209>.ladi-headline,
+#HEADLINE210>.ladi-headline,
+#HEADLINE211>.ladi-headline,
+#HEADLINE212>.ladi-headline,
+#HEADLINE220>.ladi-headline,
+#HEADLINE221>.ladi-headline,
+#HEADLINE222>.ladi-headline,
+#HEADLINE223>.ladi-headline,
+#HEADLINE224>.ladi-headline,
+#HEADLINE225>.ladi-headline,
+#HEADLINE226>.ladi-headline,
+#HEADLINE227>.ladi-headline,
+#HEADLINE228>.ladi-headline,
+#HEADLINE229>.ladi-headline,
+#HEADLINE230>.ladi-headline,
+#HEADLINE231>.ladi-headline,
+#HEADLINE232>.ladi-headline,
+#HEADLINE233>.ladi-headline {
   font-family: QSTUSQUUSUGQUULUFRElVTSUVEY;
   font-size: 16px;
   line-height: 1.6;
@@ -3351,10 +3167,12 @@ body {
   top: 112.7px;
   left: 223px;
 }
+
 #HEADLINE197x {
   top: 112.7px;
-  left: 12px!important;
+  left: 12px !important;
 }
+
 #HEADLINE125,
 #HEADLINE197 {
   top: 112.7px;
@@ -3381,6 +3199,7 @@ body {
   top: 147.5px;
   left: 117.5px;
 }
+
 #HEADLINE127x {
   top: 112.7px;
   left: 12px;
@@ -3396,8 +3215,7 @@ body {
   left: 117.5px;
 }
 
-#HEADLINE130x
-{
+#HEADLINE130x {
   top: 112.7px;
   left: 170.25px;
 }
@@ -3416,6 +3234,7 @@ body {
   top: 112.7px;
   left: 340.5px;
 }
+
 #HEADLINE130,
 #HEADLINE202 {
   top: 147.5px;
@@ -3468,9 +3287,9 @@ body {
 }
 
 #IMAGE56,
-#IMAGE56 > .ladi-image > .ladi-image-background,
+#IMAGE56>.ladi-image>.ladi-image-background,
 #IMAGE58,
-#IMAGE58 > .ladi-image > .ladi-image-background {
+#IMAGE58>.ladi-image>.ladi-image-background {
   width: 43.8px;
   height: 43.8px;
 }
@@ -3480,8 +3299,8 @@ body {
   left: 58.75px;
 }
 
-#IMAGE56 > .ladi-image > .ladi-image-background,
-#IMAGE58 > .ladi-image > .ladi-image-background {
+#IMAGE56>.ladi-image>.ladi-image-background,
+#IMAGE58>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s350x350/6322a62f2dad980013bb5005/png-clipart-computer-icons-arrow-miscellaneous-angle-20250323082200-ub0dm.png");
 }
 
@@ -3508,20 +3327,20 @@ body {
   left: 0px;
 }
 
-#HEADLINE139 > .ladi-headline,
-#HEADLINE140 > .ladi-headline,
-#HEADLINE141 > .ladi-headline,
-#HEADLINE142 > .ladi-headline,
-#HEADLINE143 > .ladi-headline,
-#HEADLINE144 > .ladi-headline,
-#HEADLINE145 > .ladi-headline,
-#HEADLINE213 > .ladi-headline,
-#HEADLINE214 > .ladi-headline,
-#HEADLINE215 > .ladi-headline,
-#HEADLINE216 > .ladi-headline,
-#HEADLINE217 > .ladi-headline,
-#HEADLINE218 > .ladi-headline,
-#HEADLINE219 > .ladi-headline {
+#HEADLINE139>.ladi-headline,
+#HEADLINE140>.ladi-headline,
+#HEADLINE141>.ladi-headline,
+#HEADLINE142>.ladi-headline,
+#HEADLINE143>.ladi-headline,
+#HEADLINE144>.ladi-headline,
+#HEADLINE145>.ladi-headline,
+#HEADLINE213>.ladi-headline,
+#HEADLINE214>.ladi-headline,
+#HEADLINE215>.ladi-headline,
+#HEADLINE216>.ladi-headline,
+#HEADLINE217>.ladi-headline,
+#HEADLINE218>.ladi-headline,
+#HEADLINE219>.ladi-headline {
   font-family: IzlTbGlkZTAzIEljaWVsTmZWNlbnRvcFucyObJtYWwudHRm;
   font-size: 16px;
   line-height: 1.6;
@@ -3737,7 +3556,7 @@ body {
   height: 410px;
 }
 
-#BOX9 > .ladi-box {
+#BOX9>.ladi-box {
   background-image: url("https://w.ladicdn.com/s750x750/6322a62f2dad980013bb5005/mieg0354-20250508125828-5hq7y.jpg");
   background-size: cover;
   background-origin: content-box;
@@ -3753,7 +3572,7 @@ body {
   left: 0px;
 }
 
-#BOX10 > .ladi-box {
+#BOX10>.ladi-box {
   background-image: linear-gradient(rgba(253, 251, 251, 0), rgba(1, 1, 1, 0.3));
   background-color: initial;
   background-size: initial;
@@ -3774,8 +3593,8 @@ body {
   left: 57px;
 }
 
-#HEADLINE61 > .ladi-headline,
-#HEADLINE73 > .ladi-headline {
+#HEADLINE61>.ladi-headline,
+#HEADLINE73>.ladi-headline {
   font-family: MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY;
   font-size: 54px;
   line-height: 1.6;
@@ -3806,9 +3625,9 @@ body {
   left: 50.064px;
 }
 
-#HEADLINE64 > .ladi-headline,
-#HEADLINE63 > .ladi-headline,
-#HEADLINE65 > .ladi-headline {
+#HEADLINE64>.ladi-headline,
+#HEADLINE63>.ladi-headline,
+#HEADLINE65>.ladi-headline {
   font-family: RUJHYXJhbWuZCNZWRpdWudHRm;
   font-size: 19px;
   line-height: 1.6;
@@ -3828,9 +3647,9 @@ body {
   left: 132.064px;
 }
 
-#HEADLINE66 > .ladi-headline,
-#HEADLINE68 > .ladi-headline,
-#HEADLINE70 > .ladi-headline {
+#HEADLINE66>.ladi-headline,
+#HEADLINE68>.ladi-headline,
+#HEADLINE70>.ladi-headline {
   font-family: RUJHYXJhbWuZCSZWdbGFyLnRZg;
   font-size: 17px;
   line-height: 1.6;
@@ -3844,7 +3663,7 @@ body {
   left: 132.064px;
 }
 
-#HEADLINE67 > .ladi-headline {
+#HEADLINE67>.ladi-headline {
   font-family: RUJHYXJhbWuZCNZWRpdWudHRm;
   font-size: 17px;
   line-height: 1.6;
@@ -3854,7 +3673,7 @@ body {
 }
 
 #IMAGE12,
-#IMAGE12 > .ladi-image > .ladi-image-background {
+#IMAGE12>.ladi-image>.ladi-image-background {
   width: 54px;
   height: 53.5714px;
 }
@@ -3864,7 +3683,7 @@ body {
   left: 0px;
 }
 
-#IMAGE12 > .ladi-image > .ladi-image-background {
+#IMAGE12>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s400x400/6322a62f2dad980013bb5005/untitled-6-20250420030805-cyjyq.png");
 }
 
@@ -3891,8 +3710,8 @@ body {
   left: 129.167px;
 }
 
-#HEADLINE69 > .ladi-headline,
-#HEADLINE71 > .ladi-headline {
+#HEADLINE69>.ladi-headline,
+#HEADLINE71>.ladi-headline {
   font-family: RUJHYXJhbWuZCNZWRpdWudHRm;
   font-size: 17px;
   line-height: 1.6;
@@ -3903,7 +3722,7 @@ body {
 }
 
 #IMAGE13,
-#IMAGE13 > .ladi-image > .ladi-image-background {
+#IMAGE13>.ladi-image>.ladi-image-background {
   width: 51.167px;
   height: 51.167px;
 }
@@ -3913,7 +3732,7 @@ body {
   left: 0px;
 }
 
-#IMAGE13 > .ladi-image > .ladi-image-background {
+#IMAGE13>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s400x400/6322a62f2dad980013bb5005/untitled-4-20250420023945-8bthf.png");
 }
 
@@ -3941,7 +3760,7 @@ body {
 }
 
 #IMAGE14,
-#IMAGE14 > .ladi-image > .ladi-image-background {
+#IMAGE14>.ladi-image>.ladi-image-background {
   width: 58.377px;
   height: 58.377px;
 }
@@ -3951,7 +3770,7 @@ body {
   left: 0px;
 }
 
-#IMAGE14 > .ladi-image > .ladi-image-background {
+#IMAGE14>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s400x400/6322a62f2dad980013bb5005/untitled-5-20250420024050-0e1lg.png");
 }
 
@@ -3965,8 +3784,8 @@ body {
   left: 273px;
 }
 
-#LINE5 > .ladi-line > .ladi-line-container,
-#LINE7 > .ladi-line > .ladi-line-container {
+#LINE5>.ladi-line>.ladi-line-container,
+#LINE7>.ladi-line>.ladi-line-container {
   border-top: 2px solid rgb(255, 255, 255);
   border-right: 2px solid rgb(255, 255, 255);
   border-bottom: 2px solid rgb(255, 255, 255);
@@ -3989,7 +3808,7 @@ body {
 
 #HEADLINE73 {
   top: 28.6px;
-  left: 179px;
+  left: 185px;
 }
 
 #HEADLINE74 {
@@ -3998,7 +3817,7 @@ body {
   left: 207.5px;
 }
 
-#HEADLINE74 > .ladi-headline {
+#HEADLINE74>.ladi-headline {
   font-family: RUJHYXJhbWuZCSZWdbGFyLnRZg;
   font-size: 14px;
   line-height: 1.6;
@@ -4013,7 +3832,7 @@ body {
   left: 207.5px;
 }
 
-#BOX17 > .ladi-box {
+#BOX17>.ladi-box {
   background-image: url("https://w.ladicdn.com/s700x600/6322a62f2dad980013bb5005/uypw2887-20250508130203-qqfgg.jpg");
   background-size: cover;
   background-origin: content-box;
@@ -4022,14 +3841,14 @@ body {
   background-attachment: scroll;
 }
 
-#BOX17 > .ladi-box,
-#BOX18 > .ladi-box,
-#BOX20 > .ladi-box,
-#BOX21 > .ladi-box,
-#BOX22 > .ladi-box,
-#BOX23 > .ladi-box,
-#BOX24 > .ladi-box,
-#BOX25 > .ladi-box {
+#BOX17>.ladi-box,
+#BOX18>.ladi-box,
+#BOX20>.ladi-box,
+#BOX21>.ladi-box,
+#BOX22>.ladi-box,
+#BOX23>.ladi-box,
+#BOX24>.ladi-box,
+#BOX25>.ladi-box {
   box-shadow: rgb(31, 33, 36) 0px 13px 20px -17px;
 }
 
@@ -4040,7 +3859,7 @@ body {
   left: 207.5px;
 }
 
-#BOX18 > .ladi-box {
+#BOX18>.ladi-box {
   background-image: url("https://w.ladicdn.com/s550x700/6322a62f2dad980013bb5005/screenshot-2025-05-08-200213-20250508130315-vqh-z.png");
   background-size: cover;
   background-origin: content-box;
@@ -4060,7 +3879,7 @@ body {
   left: 442.5px;
 }
 
-#BOX20 > .ladi-box {
+#BOX20>.ladi-box {
   background-image: url("https://w.ladicdn.com/s450x500/6322a62f2dad980013bb5005/screenshot-2025-05-08-200224-20250508130315-etbj5.png");
   background-size: cover;
   background-origin: content-box;
@@ -4074,7 +3893,7 @@ body {
   left: 442.5px;
 }
 
-#BOX21 > .ladi-box {
+#BOX21>.ladi-box {
   background-image: url("https://w.ladicdn.com/s450x500/6322a62f2dad980013bb5005/screenshot-2025-05-08-200243-20250508130315-mzo0h.png");
   background-size: cover;
   background-origin: content-box;
@@ -4083,7 +3902,7 @@ body {
   background-attachment: scroll;
 }
 
-#BOX21.ladi-animation > .ladi-box {
+#BOX21.ladi-animation>.ladi-box {
   animation-name: fadeInDown;
   animation-delay: 1s;
   animation-duration: 1s;
@@ -4103,7 +3922,7 @@ body {
   left: 207.5px;
 }
 
-#BOX22 > .ladi-box {
+#BOX22>.ladi-box {
   background-image: url("https://w.ladicdn.com/s500x600/6322a62f2dad980013bb5005/screenshot-2025-05-08-200344-20250508130457-aue0r.png");
   background-size: cover;
   background-origin: content-box;
@@ -4117,7 +3936,7 @@ body {
   left: 399.5px;
 }
 
-#BOX23 > .ladi-box {
+#BOX23>.ladi-box {
   background-image: url("https://w.ladicdn.com/s500x600/6322a62f2dad980013bb5005/screenshot-2025-05-08-200354-20250508130457-rucxc.png");
   background-size: cover;
   background-origin: content-box;
@@ -4131,7 +3950,7 @@ body {
   left: 207.5px;
 }
 
-#BOX24 > .ladi-box {
+#BOX24>.ladi-box {
   background-image: url("https://w.ladicdn.com/s500x600/6322a62f2dad980013bb5005/screenshot-2025-05-08-200407-20250508130457-1izf6.png");
   background-size: cover;
   background-origin: content-box;
@@ -4145,7 +3964,7 @@ body {
   left: 399.5px;
 }
 
-#BOX25 > .ladi-box {
+#BOX25>.ladi-box {
   background-image: url("https://w.ladicdn.com/s500x600/6322a62f2dad980013bb5005/screenshot-2025-05-08-200428-20250508130457-zc3mv.png");
   background-size: cover;
   background-origin: content-box;
@@ -4160,7 +3979,7 @@ body {
   left: 0px;
 }
 
-#HEADLINE75 > .ladi-headline {
+#HEADLINE75>.ladi-headline {
   font-family: RUJHYXJhbWuZCNZWRpdWudHRm;
   font-size: 23px;
   line-height: 1.6;
@@ -4181,9 +4000,9 @@ body {
 }
 
 #IMAGE33,
-#IMAGE33 > .ladi-image > .ladi-image-background,
+#IMAGE33>.ladi-image>.ladi-image-background,
 #IMAGE46,
-#IMAGE46 > .ladi-image > .ladi-image-background {
+#IMAGE46>.ladi-image>.ladi-image-background {
   width: 420px;
   height: 456px;
 }
@@ -4193,13 +4012,13 @@ body {
   left: 0.539px;
 }
 
-#IMAGE33 > .ladi-image > .ladi-image-background,
-#IMAGE46 > .ladi-image > .ladi-image-background {
+#IMAGE33>.ladi-image>.ladi-image-background,
+#IMAGE46>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s750x800/6322a62f2dad980013bb5005/bd95284c466fe631bf7e-20240706091144-0xksq.jpg");
 }
 
 #IMAGE21,
-#IMAGE21 > .ladi-image > .ladi-image-background {
+#IMAGE21>.ladi-image>.ladi-image-background {
   width: 461px;
   height: 461px;
 }
@@ -4209,30 +4028,30 @@ body {
   left: -41px;
 }
 
-#IMAGE21 > .ladi-image > .ladi-image-background {
+#IMAGE21>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s800x800/6322a62f2dad980013bb5005/fdf-20250420031730-_ffdk.png");
 }
 
-#IMAGE21 > .ladi-image,
-#IMAGE50 > .ladi-image {
+#IMAGE21>.ladi-image,
+#IMAGE50>.ladi-image {
   opacity: 0.75;
 }
 
 #IMAGE20,
-#IMAGE20 > .ladi-image > .ladi-image-background,
+#IMAGE20>.ladi-image>.ladi-image-background,
 #IMAGE42,
-#IMAGE42 > .ladi-image > .ladi-image-background {
+#IMAGE42>.ladi-image>.ladi-image-background {
   width: 476px;
   height: 476px;
 }
 
-#IMAGE20 > .ladi-image > .ladi-image-background,
-#IMAGE42 > .ladi-image > .ladi-image-background {
+#IMAGE20>.ladi-image>.ladi-image-background,
+#IMAGE42>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s800x800/6322a62f2dad980013bb5005/fdf-20250420031550-qdinw.png");
 }
 
-#IMAGE20 > .ladi-image,
-#IMAGE47 > .ladi-image {
+#IMAGE20>.ladi-image,
+#IMAGE47>.ladi-image {
   opacity: 0.69;
 }
 
@@ -4242,7 +4061,7 @@ body {
   left: 19.5px;
 }
 
-#HEADLINE76 > .ladi-headline {
+#HEADLINE76>.ladi-headline {
   font-family: RUJHYXJhbWuZCSZWdbGFyLnRZg;
   font-size: 17px;
   line-height: 1.6;
@@ -4257,7 +4076,7 @@ body {
   left: 19.5px;
 }
 
-#FORM2 > .ladi-form {
+#FORM2>.ladi-form {
   font-family: RUJHYXJhbWuZCSZWdbGFyLnRZg;
   font-size: 17px;
   line-height: 1.6;
@@ -4269,21 +4088,9 @@ body {
   --width-quantity: calc(17px * 2.5 + 30px);
 }
 
-#FORM2
-  .ladi-form
-  .ladi-form-item.ladi-form-checkbox
-  .ladi-form-checkbox-item
-  span[data-checked="false"],
-#FORM2
-  .ladi-form
-  .ladi-form-item.ladi-form-checkbox
-  .ladi-form-checkbox-item
-  .ladi-editing,
-#FORM2
-  .ladi-form
-  .ladi-form-item.ladi-form-checkbox
-  .ladi-form-checkbox-item
-  .ladi-editing::placeholder,
+#FORM2 .ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item span[data-checked="false"],
+#FORM2 .ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item .ladi-editing,
+#FORM2 .ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item .ladi-editing::placeholder,
 #FORM2 .ladi-form .ladi-survey-option .ladi-survey-option-label,
 #FORM2 .ladi-form-item .ladi-form-control::placeholder,
 #FORM2 .ladi-form-item select.ladi-form-control[data-selected=""],
@@ -4357,11 +4164,11 @@ body {
   left: 0px;
 }
 
-#BUTTON2 > .ladi-button > .ladi-button-background {
+#BUTTON2>.ladi-button>.ladi-button-background {
   background-color: rgba(1, 1, 1, 0);
 }
 
-#BUTTON2 > .ladi-button {
+#BUTTON2>.ladi-button {
   border-width: 1px;
   border-radius: 28px;
   border-style: solid;
@@ -4374,7 +4181,7 @@ body {
   left: 0px;
 }
 
-#BUTTON_TEXT2 > .ladi-headline {
+#BUTTON_TEXT2>.ladi-headline {
   font-family: RUJHYXJhbWuZCNZWRpdWudHRm;
   font-size: 19px;
   line-height: 1.6;
@@ -4430,7 +4237,7 @@ body {
   left: 57px;
 }
 
-#HEADLINE83 > .ladi-headline {
+#HEADLINE83>.ladi-headline {
   font-family: MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY;
   font-size: 54px;
   line-height: 1.6;
@@ -4452,7 +4259,7 @@ body {
   left: 0px;
 }
 
-#COUNTDOWN1 > .ladi-countdown {
+#COUNTDOWN1>.ladi-countdown {
   font-family: MUZUViWSVAtSEFTVEVHSSPVEY;
   font-size: 46px;
   color: rgb(49, 81, 37);
@@ -4460,7 +4267,7 @@ body {
   text-align: center;
 }
 
-#COUNTDOWN1 > .ladi-countdown > .ladi-element {
+#COUNTDOWN1>.ladi-countdown>.ladi-element {
   width: calc(25% - 2.25px);
   height: 100%;
   margin-right: 3px;
@@ -4477,9 +4284,9 @@ body {
   left: 53.2715px;
 }
 
-#HEADLINE84 > .ladi-headline,
-#HEADLINE85 > .ladi-headline,
-#HEADLINE86 > .ladi-headline {
+#HEADLINE84>.ladi-headline,
+#HEADLINE85>.ladi-headline,
+#HEADLINE86>.ladi-headline {
   font-family: IzlTbGlkZTAzIEljaWVsIEZvcnQgRmbmRyeSBSaWZIFJlZVsYXIudHRm;
   font-size: 29.87px;
   font-weight: bold;
@@ -4503,7 +4310,7 @@ body {
   left: 19.5px;
 }
 
-#BOX28 > .ladi-box {
+#BOX28>.ladi-box {
   border-width: 1px;
   border-radius: 24px;
   border-color: rgb(49, 81, 37);
@@ -4519,7 +4326,7 @@ body {
   left: 91.039px;
 }
 
-#HEADLINE94 > .ladi-headline {
+#HEADLINE94>.ladi-headline {
   font-family: RUJHYXJhbWuZCNZWRpdWudHRm;
   font-size: 19px;
   line-height: 1.6;
@@ -4529,19 +4336,19 @@ body {
 }
 
 #SECTION8 {
-  height: 388.2px;
+  height: 500px;
 }
 
 #BOX26 {
   width: 420px;
-  height: 331px;
+  height: 450px;
 }
 
-#BOX26 > .ladi-box {
+#BOX26>.ladi-box {
   background-image: url("https://p16-sign-sg.tiktokcdn.com/tiktok-obj/726584c853ae9fd27d4e2bbecc1ad942~tplv-tiktokx-origin.image?dr=14575&refresh_token=fd1b4245&x-expires=2079968400&x-signature=qYPxDCk2MW4JfLOg0mI%2F2ZgxNig%3D&t=4d5b0474&ps=13740610&shp=f21f527a&shcp=9b759fb9&idc=my");
   background-size: cover;
   background-origin: content-box;
-  background-position: 50% 0%;
+  background-position: bottom;
   background-repeat: repeat;
   background-attachment: scroll;
 }
@@ -4551,7 +4358,7 @@ body {
   height: 256px;
 }
 
-#BOX33 > .ladi-box {
+#BOX33>.ladi-box {
   background-image: linear-gradient(rgba(3, 3, 3, 0.5), rgba(234, 237, 238, 0));
   background-color: initial;
   background-size: initial;
@@ -4567,7 +4374,7 @@ body {
   left: 29.5px;
 }
 
-#HEADLINE87 > .ladi-headline {
+#HEADLINE87>.ladi-headline {
   font-family: RUJHYXJhbWuZCSZWdbGFyLnRZg;
   font-size: 15px;
   line-height: 1.7;
@@ -4576,12 +4383,11 @@ body {
 }
 
 #HEADLINE88 {
-  width: 146px;
-  top: 251.2px;
-  left: 137px;
+  width: 100%;
+  bottom: 60px;
 }
 
-#HEADLINE88 > .ladi-headline {
+#HEADLINE88>.ladi-headline {
   font-family: MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY;
   font-size: 31.4px;
   line-height: 1.6;
@@ -4590,12 +4396,11 @@ body {
 }
 
 #HEADLINE89 {
-  width: 269px;
-  top: 348.6px;
-  left: 76.039px;
+  width: 100%;
+  top: 470px;
 }
 
-#HEADLINE89 > .ladi-headline {
+#HEADLINE89>.ladi-headline {
   font-family: IzlTbGlkZTAzIEljaWVsIEZvcnQgRmbmRyeSBSaWZIFJlZVsYXIudHRm;
   font-size: 13px;
   line-height: 1.6;
@@ -4624,7 +4429,7 @@ body {
   left: 0px;
 }
 
-#BOX36 > .ladi-box {
+#BOX36>.ladi-box {
   border-radius: 100px;
   background-color: rgb(26, 102, 23);
 }
@@ -4635,7 +4440,7 @@ body {
   left: 10px;
 }
 
-#HEADLINE120 > .ladi-headline {
+#HEADLINE120>.ladi-headline {
   font-family: RUJHYXJhbWuZCNZWRpdWudHRm;
   font-size: 14.41px;
   line-height: 1.5;
@@ -4646,7 +4451,7 @@ body {
 }
 
 #IMAGE53,
-#IMAGE53 > .ladi-image > .ladi-image-background {
+#IMAGE53>.ladi-image>.ladi-image-background {
   width: 39.25px;
   height: 39.25px;
 }
@@ -4656,7 +4461,7 @@ body {
   left: 110px;
 }
 
-#IMAGE53 > .ladi-image > .ladi-image-background {
+#IMAGE53>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/6322a62f2dad980013bb5005/gif-nhacgreen-20250727084226-zq5mp.gif");
 }
 
@@ -4677,9 +4482,9 @@ body {
   margin: auto;
 }
 
-#POPUP1 > .ladi-popup > .ladi-popup-background,
-#POPUP2 > .ladi-popup > .ladi-popup-background,
-#POPUP3 > .ladi-popup > .ladi-popup-background {
+#POPUP1>.ladi-popup>.ladi-popup-background,
+#POPUP2>.ladi-popup>.ladi-popup-background,
+#POPUP3>.ladi-popup>.ladi-popup-background {
   background-color: rgb(255, 255, 255);
 }
 
@@ -4690,7 +4495,7 @@ body {
   left: 33.075px;
 }
 
-#BOX27 > .ladi-box {
+#BOX27>.ladi-box {
   background-image: url("https://w.ladicdn.com/s700x550/6322a62f2dad980013bb5005/screenshot-2025-05-08-200032-20250508130107-zbicl.png");
   background-size: cover;
   background-origin: content-box;
@@ -4699,7 +4504,7 @@ body {
   background-attachment: scroll;
 }
 
-#BOX27.ladi-animation > .ladi-box {
+#BOX27.ladi-animation>.ladi-box {
   animation-name: flipInX;
   animation-delay: 0.5s;
   animation-duration: 1s;
@@ -4712,7 +4517,7 @@ body {
   left: 215px;
 }
 
-#HEADLINE90 > .ladi-headline {
+#HEADLINE90>.ladi-headline {
   font-family: MUZUViWSVAtTWuclldXItTGEtRGbGFpcUtUmVndWxhcivdGY;
   font-size: 37px;
   line-height: 1.6;
@@ -4727,7 +4532,7 @@ body {
   left: 42.925px;
 }
 
-#HEADLINE91 > .ladi-headline {
+#HEADLINE91>.ladi-headline {
   font-family: RUJHYXJhbWuZCSZWdbGFyLnRZg;
   font-size: 16px;
   line-height: 1.6;
@@ -4740,7 +4545,7 @@ body {
   left: 184.925px;
 }
 
-#HEADLINE92 > .ladi-headline {
+#HEADLINE92>.ladi-headline {
   font-family: QSTUSQUUSUGQUULUFRElVTSUVEY;
   font-size: 15px;
   line-height: 1.3;
@@ -4755,7 +4560,7 @@ body {
   left: 328px;
 }
 
-#LINE8 > .ladi-line > .ladi-line-container {
+#LINE8>.ladi-line>.ladi-line-container {
   border-top: 2px solid rgb(49, 81, 37);
   border-right: 2px solid rgb(49, 81, 37);
   border-bottom: 2px solid rgb(49, 81, 37);
@@ -4768,7 +4573,7 @@ body {
   left: 280.925px;
 }
 
-#HEADLINE93 > .ladi-headline {
+#HEADLINE93>.ladi-headline {
   font-family: RUJHYXJhbWuZCSZWdbGFyLnRZg;
   font-size: 15px;
   line-height: 1.3;
@@ -4794,14 +4599,14 @@ body {
   left: 77.5px;
 }
 
-#IMAGE50 > .ladi-image > .ladi-image-background {
+#IMAGE50>.ladi-image>.ladi-image-background {
   width: 342.5px;
   height: 342.5px;
   background-image: url("https://w.ladicdn.com/s650x650/6322a62f2dad980013bb5005/fdf-20250420031730-_ffdk.png");
 }
 
 #IMAGE47,
-#IMAGE47 > .ladi-image > .ladi-image-background {
+#IMAGE47>.ladi-image>.ladi-image-background {
   width: 372px;
   height: 372px;
 }
@@ -4811,7 +4616,7 @@ body {
   left: 4px;
 }
 
-#IMAGE47 > .ladi-image > .ladi-image-background {
+#IMAGE47>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s700x700/6322a62f2dad980013bb5005/fdf-20250420031550-qdinw.png");
 }
 
@@ -4820,7 +4625,7 @@ body {
   height: 265px;
 }
 
-#BOX30 > .ladi-box {
+#BOX30>.ladi-box {
   background-image: url("https://w.ladicdn.com/s750x600/6322a62f2dad980013bb5005/screenshot-2025-05-29-172715-20250529102724-gvsgw.jpg");
   background-size: cover;
   background-origin: content-box;
@@ -4844,8 +4649,8 @@ body {
   height: 241px;
 }
 
-#BOX34 > .ladi-box,
-#BOX35 > .ladi-box {
+#BOX34>.ladi-box,
+#BOX35>.ladi-box {
   border-width: 2px;
   border-radius: 14px;
   border-style: solid;
@@ -4854,9 +4659,9 @@ body {
 }
 
 #IMAGE51,
-#IMAGE51 > .ladi-image > .ladi-image-background,
+#IMAGE51>.ladi-image>.ladi-image-background,
 #IMAGE52,
-#IMAGE52 > .ladi-image > .ladi-image-background {
+#IMAGE52>.ladi-image>.ladi-image-background {
   width: 132.708px;
   height: 131.655px;
 }
@@ -4867,7 +4672,7 @@ body {
   left: 18.646px;
 }
 
-#IMAGE51 > .ladi-image > .ladi-image-background {
+#IMAGE51>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s450x450/6322a62f2dad980013bb5005/screenshot-2025-05-17-175153-20250517105200-byb_5.jpg");
 }
 
@@ -4878,12 +4683,12 @@ body {
   left: 0.0015px;
 }
 
-#HEADLINE114 > .ladi-headline,
-#HEADLINE115 > .ladi-headline,
-#HEADLINE116 > .ladi-headline,
-#HEADLINE117 > .ladi-headline,
-#HEADLINE118 > .ladi-headline,
-#HEADLINE119 > .ladi-headline {
+#HEADLINE114>.ladi-headline,
+#HEADLINE115>.ladi-headline,
+#HEADLINE116>.ladi-headline,
+#HEADLINE117>.ladi-headline,
+#HEADLINE118>.ladi-headline,
+#HEADLINE119>.ladi-headline {
   font-family: TESQSSRUdVTEFSLlRURg;
   font-size: 14px;
   line-height: 1.6;
@@ -4908,7 +4713,7 @@ body {
   left: 186px;
 }
 
-#IMAGE52 > .ladi-image > .ladi-image-background {
+#IMAGE52>.ladi-image>.ladi-image-background {
   background-image: url("https://w.ladicdn.com/s450x450/6322a62f2dad980013bb5005/screenshot-2025-05-17-175445-20250517105455-jszwj.jpg");
 }
 
@@ -4930,19 +4735,15 @@ body {
   height: 662px;
 }
 
-#GALLERY1 > .ladi-gallery > .ladi-gallery-view {
+#GALLERY1>.ladi-gallery>.ladi-gallery-view {
   height: calc(100% - 90px);
 }
 
-#GALLERY1 > .ladi-gallery > .ladi-gallery-control {
+#GALLERY1>.ladi-gallery>.ladi-gallery-control {
   height: 80px;
 }
 
-#GALLERY1
-  > .ladi-gallery
-  > .ladi-gallery-control
-  > .ladi-gallery-control-box
-  > .ladi-gallery-control-item {
+#GALLERY1>.ladi-gallery>.ladi-gallery-control>.ladi-gallery-control-box>.ladi-gallery-control-item {
   width: 80px;
   height: 80px;
   margin-right: 10px;
@@ -5186,6 +4987,347 @@ body {
 
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="29"] {
   background-image: url("https://w.ladicdn.com/s400x400/6322a62f2dad980013bb5005/img_0124-20250424085737-1mtmn.jpg");
+}
+
+@-webkit-keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0);
+    transform: perspective(400px) rotateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    -ms-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    -ms-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    -ms-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0);
+    -ms-transform: perspective(400px) rotateX(0);
+    transform: perspective(400px) rotateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes flipInY {
+  0% {
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotateY(-10deg);
+    transform: perspective(400px) rotateY(-10deg);
+  }
+
+  70% {
+    -webkit-transform: perspective(400px) rotateY(10deg);
+    transform: perspective(400px) rotateY(10deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px) rotateY(0);
+    transform: perspective(400px) rotateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flipInY {
+  0% {
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    -ms-transform: perspective(400px) rotateY(90deg);
+    transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotateY(-10deg);
+    -ms-transform: perspective(400px) rotateY(-10deg);
+    transform: perspective(400px) rotateY(-10deg);
+  }
+
+  70% {
+    -webkit-transform: perspective(400px) rotateY(10deg);
+    -ms-transform: perspective(400px) rotateY(10deg);
+    transform: perspective(400px) rotateY(10deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px) rotateY(0);
+    -ms-transform: perspective(400px) rotateY(0);
+    transform: perspective(400px) rotateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotateInDownRight {
+  0% {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateInDownRight {
+  0% {
+    -webkit-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotateInDownLeft {
+  0% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateInDownLeft {
+  0% {
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
 @-webkit-keyframes flipInX {

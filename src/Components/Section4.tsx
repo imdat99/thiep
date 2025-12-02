@@ -24,7 +24,7 @@ export const Section4 = () => {
             <div id="GROUP15" className="ladi-element ladi-animation">
               <div className="ladi-group">
                 <div id="HEADLINE64" className="ladi-element">
-                  <p className="ladi-headline ladi-transition">8:30</p>
+                  <p className="ladi-headline ladi-transition">17:00</p>
                 </div>
                 <div id="HEADLINE66" className="ladi-element">
                   <p className="ladi-headline ladi-transition">
@@ -44,7 +44,7 @@ export const Section4 = () => {
             <div id="GROUP16" className="ladi-element ladi-animation">
               <div className="ladi-group">
                 <div id="HEADLINE63" className="ladi-element">
-                  <p className="ladi-headline ladi-transition">9:00</p>
+                  <p className="ladi-headline ladi-transition">18:00</p>
                 </div>
                 <div id="HEADLINE68" className="ladi-element">
                   <p className="ladi-headline ladi-transition">
@@ -64,7 +64,7 @@ export const Section4 = () => {
             <div id="GROUP17" className="ladi-element ladi-animation">
               <div className="ladi-group">
                 <div id="HEADLINE65" className="ladi-element">
-                  <p className="ladi-headline ladi-transition">9:15</p>
+                  <p className="ladi-headline ladi-transition">18:30</p>
                 </div>
                 <div id="HEADLINE70" className="ladi-element">
                   <p className="ladi-headline ladi-transition">

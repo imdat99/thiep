@@ -23,7 +23,7 @@ export const Section8 = () => {
         </div>
         <div id="HEADLINE89" className="ladi-element">
           <p className="ladi-headline ladi-transition">
-            JMII WEDDING INVITATION
+            THUCANH-THANHDAT WEDDING INVITATION
             <br />
           </p>
         </div>

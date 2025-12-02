@@ -16,7 +16,7 @@ export const Section6 = () => {
               <div className="ladi-box ladi-transition" />
             </div>
             <div id="HEADLINE73" className="ladi-element ladi-animation">
-              <p className="ladi-headline">Our memories</p>
+              <p className="ladi-headline">Our wedding day</p>
             </div>
             <div id="HEADLINE74" className="ladi-element ladi-animation">
               <p className="ladi-headline">
