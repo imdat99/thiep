@@ -2221,6 +2221,12 @@ body {
 #HEADLINE124 > .ladi-headline:hover,
 #HEADLINE125 > .ladi-headline:hover,
 #HEADLINE126 > .ladi-headline:hover,
+#HEADLINE127x > .ladi-headline:hover,
+#HEADLINE128x > .ladi-headline:hover,
+#HEADLINE129x > .ladi-headline:hover,
+#HEADLINE130x > .ladi-headline:hover,
+#HEADLINE131x > .ladi-headline:hover,
+#HEADLINE132x > .ladi-headline:hover,
 #HEADLINE127 > .ladi-headline:hover,
 #HEADLINE128 > .ladi-headline:hover,
 #HEADLINE129 > .ladi-headline:hover,
@@ -2724,7 +2730,7 @@ body {
 }
 
 #BOX6 > .ladi-box {
-  background-image: url("https://p9-sg.tiktokcdn.com/tiktok-obj/9127152c9ef5d8d6c40e5842418cfa28~tplv-photomode-zoomcover:480:480.jpeg");
+  background-image: url("https://p16-sign-sg.tiktokcdn.com/tiktok-obj/64fd92ea824e3ec8b5cf37e57df999b6~tplv-tiktokx-origin.image?dr=14575&refresh_token=2e96ad8c&x-expires=2080054800&x-signature=6yowY7UxNtn9QooPUKW4SazhuXw%3D&t=4d5b0474&ps=13740610&shp=f21f527a&shcp=9b759fb9&idc=my2");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 0%;
@@ -2809,7 +2815,7 @@ body {
 #HEADLINE51,
 #HEADLINE113,
 #HEADLINE111 {
-  width: 170px;
+  width: 175px;
 }
 
 #HEADLINE51 {
@@ -2877,9 +2883,10 @@ body {
 }
 
 #HEADLINE108 {
-  width: 392px;
+  width: 100%;
   top: 1582.1px;
-  left: 14px;
+  left: 0px;
+  padding: 0px 3rem;
 }
 
 #HEADLINE108 > .ladi-headline {
@@ -2893,9 +2900,9 @@ body {
 }
 
 #HEADLINE109 {
-  width: 356px;
-  top: 1623.96px;
-  left: 32.5px;
+  width: 100%;
+  top: 1656.96px;
+  left: 0;
 }
 
 #HEADLINE109 > .ladi-headline,
@@ -3053,9 +3060,9 @@ body {
 }
 
 #LINE13 {
-  height: 110px;
-  top: 0px;
-  left: 176px;
+      height: 90px;
+    top: 0px;
+    left: 185px;
 }
 
 #LINE13 > .ladi-line > .ladi-line-container {
@@ -3195,6 +3202,13 @@ body {
 #HEADLINE131,
 #HEADLINE132,
 #HEADLINE133,
+#HEADLINE127x,
+#HEADLINE128x,
+#HEADLINE129x,
+#HEADLINE130x,
+#HEADLINE131x,
+#HEADLINE132x,
+#HEADLINE133,
 #HEADLINE134,
 #HEADLINE135,
 #HEADLINE136,
@@ -3265,6 +3279,13 @@ body {
 #HEADLINE131 > .ladi-headline,
 #HEADLINE132 > .ladi-headline,
 #HEADLINE133 > .ladi-headline,
+#HEADLINE127x > .ladi-headline,
+#HEADLINE128x > .ladi-headline,
+#HEADLINE129x > .ladi-headline,
+#HEADLINE130x > .ladi-headline,
+#HEADLINE131x > .ladi-headline,
+#HEADLINE132x > .ladi-headline,
+#HEADLINE133x > .ladi-headline,
 #HEADLINE134 > .ladi-headline,
 #HEADLINE135 > .ladi-headline,
 #HEADLINE136 > .ladi-headline,
@@ -3360,7 +3381,41 @@ body {
   top: 147.5px;
   left: 117.5px;
 }
+#HEADLINE127x {
+  top: 112.7px;
+  left: 12px;
+}
 
+#HEADLINE128x {
+  top: 112.7px;
+  left: 64.75px;
+}
+
+#HEADLINE129x {
+  top: 112.7px;
+  left: 117.5px;
+}
+
+#HEADLINE130x
+{
+  top: 112.7px;
+  left: 170.25px;
+}
+
+#HEADLINE131x {
+  top: 112.7px;
+  left: 223px;
+}
+
+#HEADLINE132x {
+  top: 112.7px;
+  left: 275.75px;
+}
+
+#HEADLINE133x {
+  top: 112.7px;
+  left: 340.5px;
+}
 #HEADLINE130,
 #HEADLINE202 {
   top: 147.5px;
@@ -3421,8 +3476,8 @@ body {
 }
 
 #IMAGE56 {
-  top: 137.7px;
-  left: 321.1px;
+  top: 213.5px;
+  left: 58.75px;
 }
 
 #IMAGE56 > .ladi-image > .ladi-image-background,
@@ -4483,7 +4538,7 @@ body {
 }
 
 #BOX26 > .ladi-box {
-  background-image: url("https://w.ladicdn.com/s750x650/6322a62f2dad980013bb5005/mieg0230-20250508125924-j6u-s.jpg");
+  background-image: url("https://p16-sign-sg.tiktokcdn.com/tiktok-obj/726584c853ae9fd27d4e2bbecc1ad942~tplv-tiktokx-origin.image?dr=14575&refresh_token=fd1b4245&x-expires=2079968400&x-signature=qYPxDCk2MW4JfLOg0mI%2F2ZgxNig%3D&t=4d5b0474&ps=13740610&shp=f21f527a&shcp=9b759fb9&idc=my");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 0%;
