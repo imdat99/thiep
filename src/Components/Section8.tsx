@@ -13,9 +13,7 @@ export const Section8 = () => {
         </div>
         <div id="HEADLINE87" className="ladi-element ladi-animation">
           <p className="ladi-headline">
-            Cảm ơn bạn đã dành tình cảm cho chúng mình! Sự hiện diện của bạn chính
-            là món quà ý nghĩa nhất, và chúng mình vô cùng trân quý khi được cùng
-            bạn chia sẻ niềm hạnh phúc trong ngày trọng đại này.
+            Chúng mình chân thành cảm ơn tình cảm của bạn. Sự hiện diện của bạn trong ngày trọng đại này là món quà ý nghĩa nhất, và chúng mình thật sự hạnh phúc khi được chia sẻ niềm vui đó cùng bạn.
           </p>
         </div>
         <div id="HEADLINE88" className="ladi-element">

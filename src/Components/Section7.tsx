@@ -27,7 +27,7 @@ export const Section7 = () => {
         </div>
         <div id="HEADLINE76" className="ladi-element ladi-animation">
           <p className="ladi-headline">
-            Hãy xác nhận sự có mặt của bạn để chúng mình chuẩn bị đón tiếp một
+            Vui lòng xác nhận sự có mặt của bạn để chúng mình chuẩn bị đón tiếp một
             cách chu đáo nhất. Trân trọng!&nbsp;
           </p>
         </div>
